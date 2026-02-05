@@ -1,0 +1,94 @@
+/* Contenedor principal */
+.footer-container {
+  background-color: #1a1a1a; 
+  color: #f0f0f0; 
+  padding: 40px 20px 20px;
+  margin-top: auto; 
+  font-family: sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+/* Estilos de las secciones/columnas */
+.footer-section {
+  flex: 1; 
+  min-width: 250px; 
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #646cff;
+}
+
+.footer-tagline {
+  font-size: 0.9rem;
+  color: #a0a0a0;
+  line-height: 1.5;
+}
+
+.footer-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #646cff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Listas de enlaces */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #d1d1d1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  color: #646cff;
+  padding-left: 5px; 
+}
+
+/* Redes sociales */
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-link {
+  color: #d1d1d1;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.social-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Barra inferior */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  font-size: 0.8rem;
+  color: #777;
+}

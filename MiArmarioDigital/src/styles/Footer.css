@@ -1,6 +1,6 @@
 /* Contenedor principal */
 .footer-container {
-  background-color: #1a1a1a; 
+  background-color: #18181B; 
   color: #f0f0f0; 
   padding: 40px 20px 20px;
   margin-top: auto; 
@@ -26,19 +26,19 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #646cff;
+  color: #C026D3;
 }
 
 .footer-tagline {
   font-size: 0.9rem;
-  color: #a0a0a0;
+  color: #71717A;
   line-height: 1.5;
 }
 
 .footer-section h3 {
   font-size: 1.1rem;
   margin-bottom: 15px;
-  border-bottom: 2px solid #646cff;
+  border-bottom: 2px solid #C026D3;
   display: inline-block;
   padding-bottom: 5px;
 }
@@ -54,14 +54,14 @@
 }
 
 .footer-links a {
-  color: #d1d1d1;
+  color: #D4D4D8;
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 0.9rem;
 }
 
 .footer-links a:hover {
-  color: #646cff;
+  color: #C026D3;
   padding-left: 5px; 
 }
 
@@ -73,7 +73,7 @@
 }
 
 .social-link {
-  color: #d1d1d1;
+  color: #D4D4D8;
   text-decoration: none;
   font-size: 0.9rem;
 }

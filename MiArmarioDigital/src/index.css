@@ -1,4 +1,9 @@
-@import "tailwindcss"; 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "./styles/base.css";
+@import "./styles/components.css";
+
+
+@theme {
+  --color-brand: #c026d3;
+  --color-dark: #181818;
+}

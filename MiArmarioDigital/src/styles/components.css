@@ -1,7 +1,8 @@
 @layer components{
     .form-style{
-        @apply flex flex-col items-center border-l-2 border-r-2 border-b-2 border-black rounded-l-2xl rounded-r-2xl 
-        w-2/8 justify-self-center gap-5
+        @apply flex flex-col items-center 
+        border-2 border-black rounded-2xl 
+        w-full max-w-md gap-5 bg-white shadow-lg;
     }
 
     .header-form{
@@ -20,6 +21,9 @@
     }
     .logo{
         @apply w-1/9 h-1/9
+    }
+    .login{
+        @apply min-h-screen w-full flex items-center justify-center bg-gradient-to-tl from-fuchsia-600 to-white;
     }
     a{
         @apply p-2.5

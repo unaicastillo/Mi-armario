@@ -6,6 +6,8 @@ import { LogIn } from './LogIn'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <LogIn/>
+    <div className='login'>
+      <LogIn/>
+    </div>
   </StrictMode>,
 )

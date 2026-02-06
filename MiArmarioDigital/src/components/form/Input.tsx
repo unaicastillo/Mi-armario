@@ -8,7 +8,7 @@ interface InputProps {
 export const Input = ({ tipo, nombreInput, texto, ph }: InputProps) => {
   return (
     <>
-      <div>
+      <div className="input-style">
         <label htmlFor={nombreInput}>{nombreInput}</label>
         <input type={tipo} name={nombreInput} id={nombreInput} placeholder={ph} />
       </div>

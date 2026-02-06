@@ -6,7 +6,9 @@ export const Form = () => {
     return (
         <>
             <div className="form-style">
-                <h1>Inicia Sesión</h1>
+                <div className='header-form'>
+                    <h1>Inicia Sesión</h1>
+                </div>
                 <div className="inputs-form">
                     <Input tipo="mail" nombreInput="Correo" texto="" ph="Introduce tu correo electrónico" />
                     <Input tipo="password" nombreInput="Contraseña" texto="" ph="Introduce tu contraseña" />
@@ -14,8 +16,8 @@ export const Form = () => {
                     <Button nombre="Iniciar sesion" />
                 </div>
                 <a href="">¿Has olvidado tu contraseña?</a>
-
             </div>
+
         </>
     )
 }

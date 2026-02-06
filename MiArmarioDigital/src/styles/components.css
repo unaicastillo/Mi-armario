@@ -1,0 +1,20 @@
+@layer components{
+    .form-style{
+        @apply flex flex-col items-center border-l-2 border-r-2 border-b-2 border-black rounded-l-2xl rounded-r-2xl w-2/4 justify-self-center gap-1 
+    }
+
+    .header-form{
+        @apply bg-fuchsia-600 w-full flex justify-center text-white rounded-t-2xl
+    }
+
+    .inputs-form{
+        @apply flex flex-col items-center gap-2.5
+    }
+
+    .input-style{
+        @apply grid items-center
+    }
+    input{
+        @apply border-b-2 border-gray-600
+    }
+}

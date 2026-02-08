@@ -1,4 +1,4 @@
-import { Form } from "./components/form/Form"
+import { Input } from "./components/form/Input"
 
 export const LogIn = () => {
   return (

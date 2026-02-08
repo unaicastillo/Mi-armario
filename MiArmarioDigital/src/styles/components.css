@@ -6,7 +6,7 @@
     }
 
     .header-form{
-        @apply bg-fuchsia-600 w-full flex justify-center text-white rounded-t-2xl
+        @apply  w-full flex justify-center text-black rounded-t-2xl font-bold mt-1.5
     }
 
     .inputs-form{

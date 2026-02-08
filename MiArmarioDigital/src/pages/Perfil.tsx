@@ -1,4 +1,4 @@
-import { Button } from "./components/Button";
+import { Button } from "../components/Button";
 
 export const Perfil = () => {
 
@@ -28,3 +28,5 @@ export const Perfil = () => {
     </div>
   )
 }
+
+export default Perfil;

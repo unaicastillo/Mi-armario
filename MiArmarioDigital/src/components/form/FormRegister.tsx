@@ -7,7 +7,7 @@ export const FormRegister = () => {
         <>
             <div className="form-style">
                 <div className='header-form'>
-                    <h1>Inicia Sesión</h1>
+                    <h1>Registro</h1>
                 </div>
                 <div className="inputs-form">
                     <Input tipo="text" nombreInput="Usuario" texto="" ph="Introduce tu Usuario" />
@@ -18,7 +18,7 @@ export const FormRegister = () => {
                     
                     <Input tipo="password" nombreInput="Contraseña" texto="" ph="Repite la contraseña" />
 
-                    <Button nombre="Registrarse" />
+                    <Button nombre="Registrarse" class={""} />
                 </div>
             </div>
 

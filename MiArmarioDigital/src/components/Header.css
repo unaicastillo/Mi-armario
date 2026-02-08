@@ -1,0 +1,89 @@
+:root {
+  --tw-fuchsia-600: #C026D3; 
+  --tw-zinc-900: #181818;    
+  --tw-zinc-300: #D4D4D8;    
+  --tw-white: #ffffff;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--tw-white);
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  font-family: ui-sans-serif, system-ui, sans-serif; /* Fuente tipo Tailwind */
+}
+
+/* --- LOGO --- */
+.logo-section a {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+/* --- NAVEGACIÓN --- */
+.nav-links {
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: var(--tw-zinc-900);
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-item:hover {
+  color: var(--tw-fuchsia-600);
+}
+
+/* --- BOTONES --- */
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.75rem; /* rounded-xl */
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.1s, opacity 0.2s;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn-login {
+  background-color: var(--tw-zinc-300);
+  color: var(--tw-zinc-900);
+}
+
+.btn-login:hover {
+  filter: brightness(0.95);
+}
+
+.btn-register {
+  background-color: var(--tw-fuchsia-600);
+  color: var(--tw-white);
+  box-shadow: 0 4px 6px -1px rgba(192, 38, 211, 0.2);
+}
+
+.btn-register:hover {
+  opacity: 0.9;
+}

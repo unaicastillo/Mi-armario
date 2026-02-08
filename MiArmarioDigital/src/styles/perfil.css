@@ -44,7 +44,6 @@
 
     .btn_editar{
         @apply bg-[#C026D3] w-[140px] h-[40px] rounded-[4px] text-white;
-
     }
 
     .img_perfil{

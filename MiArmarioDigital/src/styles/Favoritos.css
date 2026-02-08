@@ -1,0 +1,45 @@
+@layer components {
+  .favoritos {
+    @apply w-[100vw] 
+        h-[100vh] 
+        flex 
+        items-center 
+        justify-center 
+        min-h-[800px] 
+        h-auto
+        p-[64px];
+  }
+
+  .contenedor_favoritos {
+    @apply flex 
+        flex-wrap
+        gap-4
+        w-[60vw] 
+        p-[36px] 
+        justify-self-center 
+        min-h-[600px];
+  }
+
+  .conjunto {
+    @apply 
+        h-[400px] 
+        w-[130px] 
+        bg-[#EEEEEE] 
+        grid 
+        justify-items-center 
+        items-center 
+        border-2 
+        border-solid 
+        border-black 
+        rounded-[8px];
+  }
+
+  .conjunto img {
+    @apply max-w-[80px] max-h-[80px] object-cover rounded-[16px] border-2;
+  }
+
+  .eliminar_favorito{
+    @apply bg-[#C026D3] w-[120px] h-[48px] rounded-[4px] text-white;
+  }
+
+}

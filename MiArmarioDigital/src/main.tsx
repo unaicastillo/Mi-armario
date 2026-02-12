@@ -9,9 +9,9 @@ import './index.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    {/* <div className='login'>
+    <div className='login'>
       <Register/>
-    </div> */}
+    </div>
     <App></App>
   </StrictMode>,
 )

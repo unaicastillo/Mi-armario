@@ -1,12 +1,9 @@
-@import "tailwindcss"; 
-@import "base.css";
+@import "tailwindcss";
 @import "./styles/base.css";
 @import "./styles/components.css";
 @import "./styles/Button.css";
-@import "./styles/base.css";
-@import "./styles/components.css";
-@import "./styles/Perfil.css";
 @import "./styles/Favoritos.css";
-
-@import "components.css";
-@tailwind utilities;
+@import "./styles/Footer.css";
+@import "./styles/FileUploader.css";
+@import "./styles/perfil.css";
+@import "./styles/creadorConjuntos.css";

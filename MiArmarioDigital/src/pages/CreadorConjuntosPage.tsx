@@ -5,27 +5,31 @@ import { Footer } from '../components/footer'
 
 export const CreadorConjuntos = () => {
   return (
-    <div>
+    <div className="creador-page">
       <Header />
 
-      <main>
-        <section>
-          <h1>Creador de conjuntos</h1>
-          <p>Vista visual de tus combinaciones guardadas.</p>
-          <Button nombre="Nuevo conjunto" class="btn" />
+      <main className="creador-main">
+        <section className="creador-hero">
+          <div className="creador-hero-text">
+            <h1>Creador de conjuntos</h1>
+            <p>Vista visual de tus combinaciones guardadas.</p>
+          </div>
+          <div className="creador-hero-cta">
+            <Button nombre="Nuevo conjunto" class="btn creador-cta" />
+          </div>
 
-          <div>
-            <article>
+          <div className="creador-grid">
+            <article className="creador-card">
               <h2>Conjunto 1</h2>
               <p>Descripcion breve del look.</p>
             </article>
 
-            <article>
+            <article className="creador-card">
               <h2>Conjunto 2</h2>
               <p>Descripcion breve del look.</p>
             </article>
 
-            <article>
+            <article className="creador-card">
               <h2>Conjunto 3</h2>
               <p>Descripcion breve del look.</p>
             </article>

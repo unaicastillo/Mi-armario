@@ -7,9 +7,7 @@ import { Button } from './components/Button'
 export const App = () => {
   return (
     <>
-    <Favoritos></Favoritos>
     <Footer></Footer>
-    <Button nombre={'Enviar'} class={'btn'}></Button>
     </>
   )
 }

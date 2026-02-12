@@ -6,7 +6,6 @@ export const Footer = () => {
     <footer className="footer-container">
       <div className="footer-content">
         
-        {/* Sección Logo y Descripción (TEXTO AMPLIADO AQUÍ) */}
         <div className="footer-section">
           <h2 className="footer-logo">Mi-Armario</h2>
           <p className="footer-tagline">
@@ -17,7 +16,6 @@ export const Footer = () => {
           </p>
         </div>
 
-        {/* Sección Ayuda */}
         <div className="footer-section">
           <h3>Ayuda</h3>
           <ul className="footer-links">
@@ -28,7 +26,6 @@ export const Footer = () => {
           </ul>
         </div>
 
-        {/* Sección Síguenos */}
         <div className="footer-section">
           <h3>Síguenos</h3>
           <ul className="footer-links">

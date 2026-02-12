@@ -3,8 +3,6 @@
 @import "./styles/components.css";
 @import "./styles/Button.css";
 @import "./styles/Favoritos.css";
-@import "./styles/Footer.css";
-@import "./styles/FileUploader.css";
-@import "./styles/perfil.css";
-@import "./styles/creadorConjuntos.css";
-@import "./styles/mostrarRopa.css";
+
+@import "components.css";
+@tailwind utilities;

@@ -3,6 +3,4 @@
 @import "./styles/components.css";
 @import "./styles/Button.css";
 @import "./styles/Favoritos.css";
-
-@import "components.css";
 @tailwind utilities;

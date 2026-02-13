@@ -1,6 +1,6 @@
 import React, { useCallback, useState, useEffect } from 'react';
 import { useDropzone } from 'react-dropzone';
-import './FileUploader.css';
+import './../styles/FileUploader.css';
 
 interface FileUploaderProps {
   onImageSelected: (file: File) => void; // Para pasar la imagen al padre

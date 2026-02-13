@@ -1,0 +1,106 @@
+
+@layer perfi{
+    .profile_box{
+        @apply
+            w-[100vw]
+            h-[100vh]
+            grid
+            justify-center
+            items-center
+
+
+    }
+    .user_box{
+        @apply  
+            w-[400px]
+            h-[364px]
+            grid
+            items-center
+            justify-items-center
+    }
+    #shadow_box {
+        @apply absolute
+            justify-self-center
+            bg-[#B200B8]
+            blur-[123px]
+            w-[60vh]
+            h-[91vh]
+            top-[83vh]
+            translate-y-[-90%]
+            rotate-z-[66deg]
+            -z-10
+    }
+
+    .user_box{
+        @apply  bg-[#EEEEEE] 
+            border-[5px] 
+            border-solid 
+            rounded-[21px] 
+            
+            grid 
+            justify-items-center 
+            items-center;
+    }
+
+    .btn_editar{
+        @apply bg-[#C026D3] w-[140px] h-[40px] rounded-[4px] text-white;
+    }
+
+    .img_perfil{
+        @apply w-[92px] h-[92px] rounded-full border-[2px] 
+    }
+    .btn_imagen{
+        @apply w-[92px] h-[92px] rounded-full duration-300 rounded-full group-hover:scale-110;
+    }
+
+
+
+
+}
+
+
+/* .profile_box{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.user_box{
+    width: 400px;
+    height: 364px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+}
+#shadow_box {
+    position: absolute;
+    justify-self: center;
+    transform: translateY(-90%) rotateZ(66deg);
+    background-color: #B200B8;
+    filter: blur(123px);
+    width: 60vh;
+    height: 91vh;
+    top: 83vh;
+    z-index: -1;
+
+}
+
+.user_box{
+    background-color: #EEEEEE;
+    border: 5px solid;
+    border-radius: 21px;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.btn_editar{
+    background-color: #C026D3;
+    border-radius: 4px;
+    color: white;
+
+}  */

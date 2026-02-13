@@ -1,12 +1,15 @@
-import React from 'react';
-import Header from './components/Header';
+import React from 'react'
+import { Boton_tema } from './components/Boton_tema'
+import { Footer } from './components/footer'
+import { Favoritos } from './pages/Favoritos'
+import { Button } from './components/Button'
 
-
-const App = () => {
+export const App = () => {
   return (
-    <div>
-      <Header/>
-    </div>
-  );
-};
-export default App;
+    <>
+    <Favoritos></Favoritos>
+    <Footer></Footer>
+    <Button nombre={'Enviar'} class={'btn'}></Button>
+    </>
+  )
+}

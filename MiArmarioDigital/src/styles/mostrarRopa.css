@@ -1,0 +1,51 @@
+@reference "tailwindcss";
+
+@layer components {
+  .mostrar-page {
+    @apply min-h-screen bg-white text-gray-900;
+  }
+
+  .mostrar-main {
+    @apply w-full;
+  }
+
+  .mostrar-hero {
+    @apply mx-auto flex w-full max-w-6xl flex-col gap-6 px-4 py-10 sm:px-6 lg:px-8;
+  }
+
+  .mostrar-hero-text {
+    @apply flex flex-col gap-2;
+  }
+
+  .mostrar-hero-text h1 {
+    @apply text-3xl font-semibold tracking-tight sm:text-4xl;
+  }
+
+  .mostrar-hero-text p {
+    @apply text-base text-gray-600 sm:text-lg;
+  }
+
+  .mostrar-hero-cta {
+    @apply flex w-full items-start sm:items-center sm:justify-end;
+  }
+
+  .mostrar-cta {
+    @apply w-full sm:w-auto;
+  }
+
+  .mostrar-grid {
+    @apply grid gap-5 pt-2 sm:grid-cols-2 lg:grid-cols-3;
+  }
+
+  .mostrar-card {
+    @apply flex flex-col gap-2 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md;
+  }
+
+  .mostrar-card h2 {
+    @apply text-lg font-semibold;
+  }
+
+  .mostrar-card p {
+    @apply text-sm text-gray-600;
+  }
+}

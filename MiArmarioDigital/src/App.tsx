@@ -9,7 +9,7 @@ import { MostrarRopa } from './pages/MostrarRopaPage'
 export const App = () => {
   return (
     <>
-    
+    <CreadorConjuntos></CreadorConjuntos>
     </>
   )
 }

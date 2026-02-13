@@ -5,4 +5,6 @@
 @import "./styles/Favoritos.css";
 @import "./styles/creadorConjuntos.css";
 @import "./styles/mostrarRopa.css";
+@import "./styles/Footer.css";
+
 @tailwind utilities;

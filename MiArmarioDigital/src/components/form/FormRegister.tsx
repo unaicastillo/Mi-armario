@@ -16,7 +16,7 @@ export const FormRegister = () => {
 
                     <Input tipo="password" nombreInput="Contraseña" texto="" ph="Introduce tu contraseña" />
                     
-                    <Input tipo="password" nombreInput="Contraseña" texto="" ph="Repite la contraseña" />
+                    <Input tipo="password" nombreInput="Repite la contraseña" texto="" ph="Introduce tu contraseña" />
 
                     <Button nombre="Registrarse" class={""} />
                 </div>

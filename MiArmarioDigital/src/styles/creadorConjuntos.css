@@ -2,11 +2,11 @@
 
 @layer components {
   .creador-page {
-    @apply min-h-screen bg-white text-gray-900;
+    @apply min-h-screen bg-white text-gray-900 ;
   }
 
   .creador-main {
-    @apply w-full;
+    @apply w-full h-[90vh];
   }
 
   .creador-hero {
@@ -26,7 +26,7 @@
   }
 
   .creador-hero-cta {
-    @apply flex w-full items-start sm:items-center sm:justify-end;
+    @apply flex w-full items-start sm:items-center sm:justify-start;
   }
 
   .creador-cta {

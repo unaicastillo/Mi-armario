@@ -4,7 +4,7 @@ import { Button } from './Button';
 
 const Header = () => {
   return (
-    <header className="flex justify-between items-center px-8 py-4 bg-white border-b border-gray-200 shadow-sm font-sans">
+    <header className="grid justify-items-center items-center px-8 py-4 bg-white border-b border-gray-200 shadow-sm font-sans sm:flex sm:justify-between">
       
       {/* Sección Logo */}
       <div className="flex items-center">
@@ -37,12 +37,12 @@ const Header = () => {
       <div className="flex gap-4 items-center">
         <Button 
             nombre="Iniciar Sesion" 
-            className="w-[130px] h-[40px] bg-[#D4D4D8] text-[#181818] rounded-[5px] flex items-center justify-center cursor-pointer font-medium transition-transform active:scale-95 hover:brightness-95"
+            class="w-[130px] h-[40px] bg-[#D4D4D8] text-[#181818] rounded-[5px] flex items-center justify-center cursor-pointer font-medium transition-transform active:scale-95 hover:brightness-95"
         />
 
         <Button 
             nombre="Registrarse" 
-            className="w-[110px] h-[40px] bg-[#c026d3] text-white rounded-[5px] flex items-center justify-center cursor-pointer font-medium transition-transform active:scale-95 hover:opacity-90 shadow-md" 
+            class="w-[110px] h-[40px] bg-[#c026d3] text-white rounded-[5px] flex items-center justify-center cursor-pointer font-medium transition-transform active:scale-95 hover:opacity-90 shadow-md" 
         />
       </div>
     </header>

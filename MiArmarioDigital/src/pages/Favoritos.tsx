@@ -1,3 +1,4 @@
+import { Button } from '../components/Button';
 import Header from '../components/Header';
 import { Footer } from '../components/footer';
 
@@ -66,10 +67,14 @@ export const Favoritos = () => {
         <div className="contenedor_favoritos">
           {conjuntos.map((el, index) => (
             <div key={index} className="conjunto">
-              {el.partes.map((img, i) => (
-                <img src={img} key={i} />
-              ))}
-            <button className='eliminar_favorito'>Eliminar de favoritos</button>
+              <div className='contenedor_conjunto'>
+                {el.partes.map((img, i) => (
+                  <img src={img} key={i} />
+                ))}
+              </div>
+              <div className='contenedor_acciones'>
+                <Button class='eliminar_favorito' nombre='Eliminar de favoritos'></Button>
+              </div>
             </div>
           ))}
         </div>

@@ -9,9 +9,9 @@ import { MostrarRopa } from './pages/MostrarRopaPage'
 export const App = () => {
   return (
     <>
-    {/* <CreadorConjuntos></CreadorConjuntos> */}
-
-    <MostrarRopa></MostrarRopa>
+    <Favoritos></Favoritos>
+    {/* <Footer></Footer>
+    <Button nombre={'Enviar'} class={'btn'}></Button> */}
     </>
   )
 }

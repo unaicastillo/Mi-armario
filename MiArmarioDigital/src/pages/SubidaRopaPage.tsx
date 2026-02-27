@@ -33,9 +33,11 @@ const PagSubidaRopa = () => {
             {/* COLUMNA DERECHA: DATOS */}
             <div className="flex flex-col gap-6">
                 
-                <Input 
-                    label="Nombre de la prenda"
-                    placeholder="Ej. Camiseta blanca básica" 
+                <Input
+                    texto=''
+                    tipo='text' 
+                    nombreInput="Nombre de la prenda"
+                    ph="Ej. Camiseta blanca básica" 
                 />
 
                 <div className="grid grid-cols-2 gap-4">
@@ -77,11 +79,11 @@ const PagSubidaRopa = () => {
                 <div className="flex gap-4 mt-4 pt-4 border-t border-gray-100">
                      <Button 
                         nombre="Cancelar" 
-                        variant="secondary"
+                        class="secondary"
                     />
                     <Button 
                         nombre="Guardar Prenda" 
-                        variant="primary"
+                        class="primary"
                     />
                 </div>
 

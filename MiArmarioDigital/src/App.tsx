@@ -5,11 +5,13 @@ import { Favoritos } from './pages/Favoritos'
 import { Button } from './components/Button'
 import { CreadorConjuntos } from './pages/CreadorConjuntosPage'
 import { MostrarRopa } from './pages/MostrarRopaPage'
+import LandingPublicaPage from './pages/LandingPublicaPage'
+import PagSubidaRopa from './pages/SubidaRopaPage'
 
 export const App = () => {
   return (
     <>
-    <Favoritos></Favoritos>
+    <PagSubidaRopa></PagSubidaRopa>
     {/* <Footer></Footer>
     <Button nombre={'Enviar'} class={'btn'}></Button> */}
     </>

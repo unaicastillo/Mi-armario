@@ -13,7 +13,7 @@ export const Form = () => {
                     <Input tipo="mail" nombreInput="Correo" texto="" ph="Introduce tu correo electrónico" />
                     <Input tipo="password" nombreInput="Contraseña" texto="" ph="Introduce tu contraseña" />
 
-                    <Button nombre="Iniciar sesion" />
+                    <Button nombre="Iniciar sesion" class=''/>
                 </div>
                 <a href="">¿Has olvidado tu contraseña?</a>
             </div>

@@ -1,94 +1,70 @@
-/* Contenedor principal */
-.footer-container {
-  background-color: #18181B; 
-  color: #f0f0f0; 
-  padding: 40px 20px 20px;
-  margin-top: auto; 
-  font-family: sans-serif;
-}
+@import "tailwindcss";
 
-.footer-content {
-  display: flex;
-  flex-wrap: wrap; 
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 30px;
-}
+@layer components {
+  /* ... (tu .footer-container sigue igual) ... */
+  .footer-container {
+    @apply bg-zinc-900 text-zinc-100 pt-12 px-6 pb-8 mt-auto font-sans;
+  }
 
-/* Estilos de las secciones/columnas */
-.footer-section {
-  flex: 1; 
-  min-width: 250px; 
-}
+  /* MEJORA RESPONSIVE AQUÍ */
+  .footer-content {
+    /* 1. Usamos GRID en lugar de Flex para control exacto */
+    /* Móvil: 1 sola columna. Tablet/Desktop: 3 columnas (o 4 si añades más) */
+    @apply grid grid-cols-1 md:grid-cols-3 gap-10;
+    
+    /* 2. Alineación inteligente */
+    /* Móvil: Texto centrado. Desktop: Texto a la izquierda */
+    @apply text-center md:text-left;
+    
+    @apply max-w-[1200px] mx-auto;
+  }
 
-.footer-logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #C026D3;
-}
+  /* Ya no necesitamos min-width ni flex-1 aquí gracias al Grid */
+  .footer-section {
+    @apply flex flex-col; 
+  }
 
-.footer-tagline {
-  font-size: 0.9rem;
-  color: #71717A;
-  line-height: 1.5;
-}
+  .footer-logo {
+    @apply text-2xl font-bold mb-3 text-fuchsia-600;
+  }
 
-.footer-section h3 {
-  font-size: 1.1rem;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #C026D3;
-  display: inline-block;
-  padding-bottom: 5px;
-}
+  .footer-tagline {
+    @apply text-sm text-zinc-500 leading-relaxed;
+    /* Centramos el tagline en móvil limitando el ancho para que no se lea mal */
+    @apply mx-auto md:mx-0 max-w-xs md:max-w-none;
+  }
 
-/* Listas de enlaces */
-.footer-links {
-  list-style: none;
-  padding: 0;
-}
+  /* Títulos con la línea decorativa */
+  .footer-section h3 {
+    @apply text-lg mb-4 border-b-2 border-fuchsia-600 inline-block pb-1;
+    /* En móvil, como el texto está centrado, la línea debe estar centrada */
+    @apply mx-auto md:mx-0;
+  }
 
-.footer-links li {
-  margin-bottom: 8px;
-}
+  .footer-links {
+    @apply list-none p-0 space-y-2; /* space-y-2 añade margen vertical automático */
+  }
 
-.footer-links a {
-  color: #D4D4D8;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  font-size: 0.9rem;
-}
+  .footer-links a {
+    @apply text-zinc-300 no-underline text-sm transition-all duration-300;
+    @apply hover:text-fuchsia-600 hover:pl-1;
+    /* En móvil quitamos el padding-left al hover si queremos que se mantenga centrado, 
+       o lo dejamos si te gusta el efecto. Lo dejo activo. */
+  }
 
-.footer-links a:hover {
-  color: #C026D3;
-  padding-left: 5px; 
-}
+  /* Redes sociales */
+  .social-icons {
+    @apply flex flex-col gap-3;
+    /* IMPORTANTE: Alinear los items (iconos/links) */
+    /* Móvil: Center. Desktop: Start (izquierda) */
+    @apply items-center md:items-start;
+  }
 
-/* Redes sociales */
-.social-icons {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+  .social-link {
+    @apply text-zinc-300 no-underline text-sm hover:text-white hover:underline;
+  }
 
-.social-link {
-  color: #D4D4D8;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-.social-link:hover {
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-/* Barra inferior */
-.footer-bottom {
-  text-align: center;
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid #333;
-  font-size: 0.8rem;
-  color: #777;
+  .footer-bottom {
+    @apply text-center mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500;
+  }
 }

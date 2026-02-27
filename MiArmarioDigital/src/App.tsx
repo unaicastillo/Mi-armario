@@ -9,7 +9,9 @@ import { MostrarRopa } from './pages/MostrarRopaPage'
 export const App = () => {
   return (
     <>
-    
+    <Favoritos></Favoritos>
+    {/* <Footer></Footer>
+    <Button nombre={'Enviar'} class={'btn'}></Button> */}
     </>
   )
 }

@@ -1,41 +1,73 @@
 @layer components {
   .favoritos {
-    @apply w-[100vw] 
+    @apply 
+        w-[100vw] 
         h-[100vh] 
         flex 
         items-center 
         justify-center 
         min-h-[800px] 
         h-auto
-        p-[64px];
+        /* width <= 640px _ padding-top=32px y padding-bottom=32px*/
+        pt-[32px]
+        pb-[32px]
+        /* width >640px _   padding=64px*/
+        sm:pt-[64px]
+        sm:pb-[64px];
   }
 
   .contenedor_favoritos {
-    @apply flex 
+    @apply 
+        flex 
         flex-wrap
+        justify-center
         gap-4
-        w-[60vw] 
-        p-[36px] 
+        w-[75vw] 
         justify-self-center 
-        min-h-[600px];
+        min-h-[600px]
+        /* width >640px _ padding=36px*/
+        sm:p-[36px] ;
   }
 
   .conjunto {
     @apply 
         h-[400px] 
-        w-[130px] 
-        bg-[#EEEEEE] 
+        bg-white
         grid 
         justify-items-center 
         items-center 
         border-2 
         border-solid 
         border-black 
-        rounded-[8px];
+        translate-y-0.5 
+        rounded-[18px]   
+        w-[275px]
+        shadow-[0_4px_10px_rgba(0,0,0,0.3)];
   }
 
+  .contenedor_conjunto{
+    @apply 
+      grid 
+      w-full 
+      h-full  
+      justify-items-center 
+      items-center
+      rounded-t-2xl;
+  }
+
+  .contenedor_acciones{
+    @apply
+       grid
+       w-full
+       h-full 
+       border-t-2 
+       border-black 
+       justify-items-center 
+       items-center 
+       rounded-b-2xl;
+  }
   .conjunto img {
-    @apply max-w-[80px] max-h-[80px] object-cover rounded-[16px] border-2;
+    @apply max-w-[80px] max-h-[80px] object-cover rounded-[16px] shadow-[0_4px_10px_rgba(0,0,0,0.3)];
   }
 
   .eliminar_favorito{

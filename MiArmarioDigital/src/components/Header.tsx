@@ -1,48 +1,39 @@
 import React from 'react';
 import logoImage from '../assets/MiArmarioLogo.png';
 import { Button } from './Button';
+import '../styles/Header.css';
 
 const Header = () => {
   return (
-    <header className="flex justify-between items-center px-8 py-4 bg-white border-b border-gray-200 shadow-sm font-sans">
-      
-      {/* Sección Logo */}
-      <div className="flex items-center">
-        <a href="pages/LandingPublica" className="flex items-center">
+
+    <header className="header-container sm:justify-between">
+      <div className="header-logo-section">
+        <a href="pages/LandingPublica" className="header-logo-link">
           <img 
             src={logoImage} 
             alt="Mi Armario Logo" 
-            className="h-[60px] w-auto block" 
+            className="header-logo-img" 
           />
         </a>
       </div>
 
-      {/* Sección Navegación */}
-      <nav className="flex gap-12">
-        <a 
-          href="#contactanos" 
-          className="text-[#181818] font-medium text-base hover:text-[#c026d3] transition-colors duration-200"
-        >
+      <nav className="header-nav">
+        <a href="#contactanos" className="header-nav-link">
           Contáctanos
         </a>
-        <a 
-          href="#conocenos" 
-          className="text-[#181818] font-medium text-base hover:text-[#c026d3] transition-colors duration-200"
-        >
+        <a href="#conocenos" className="header-nav-link">
           Conócenos
         </a>
       </nav>
 
-      {/* Sección Botones */}
-      <div className="flex gap-4 items-center">
+      <div className="header-buttons-section">
         <Button 
             nombre="Iniciar Sesion" 
-            className="w-[130px] h-[40px] bg-[#D4D4D8] text-[#181818] rounded-[5px] flex items-center justify-center cursor-pointer font-medium transition-transform active:scale-95 hover:brightness-95"
+            className="header-btn-login"
         />
-
         <Button 
             nombre="Registrarse" 
-            className="w-[110px] h-[40px] bg-[#c026d3] text-white rounded-[5px] flex items-center justify-center cursor-pointer font-medium transition-transform active:scale-95 hover:opacity-90 shadow-md" 
+            className="header-btn-register" 
         />
       </div>
     </header>

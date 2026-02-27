@@ -29,11 +29,11 @@ const Header = () => {
       <div className="header-buttons-section">
         <Button 
             nombre="Iniciar Sesion" 
-            className="header-btn-login"
+            class="header-btn-login"
         />
         <Button 
             nombre="Registrarse" 
-            className="header-btn-register" 
+            class="header-btn-register" 
         />
       </div>
     </header>

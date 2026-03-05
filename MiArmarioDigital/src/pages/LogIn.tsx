@@ -5,7 +5,9 @@ export const LogIn = () => {
     <>
   
         {/* <img src=".\src\assets\MiArmarioLogo.png" alt="Logo de MiArmarioDigital" className="logo"/> */}
-        <Form />
+        <div className="login">
+          <Form />
+        </div>
 
     </>
   )

@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Boton_tema } from './components/Boton_tema'
 import { Footer } from './components/footer'
 import { Favoritos } from './pages/Favoritos'
@@ -7,19 +8,27 @@ import { CreadorConjuntos } from './pages/CreadorConjuntosPage'
 import { MostrarRopa } from './pages/MostrarRopaPage'
 import { LogIn } from './pages/LogIn'
 import { Register } from './pages/Register'
+import LandingPublicaPage from './pages/LandingPublicaPage'
+import LandingUsuarioIniciadoPage from './pages/LandingUsuarioIniciadoPage'
+import { Perfil } from './pages/Perfil'
+import SubidaRopaPage from './pages/SubidaRopaPage'
+import { EdicionPerfil } from './EdicionPerfil'
 
 export const App = () => {
   return (
-    <>
-    <div className='login'>
-          <Register/>
-    </div>
-    {/* <div className="login">
-    <LogIn></LogIn>
-    </div> */}
-    {/* <Favoritos></Favoritos> */}
-    {/* <Footer></Footer>
-    <Button nombre={'Enviar'} class={'btn'}></Button> */}
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPublicaPage />} />
+        <Route path="/login" element={<LogIn />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/home" element={<LandingUsuarioIniciadoPage />} />
+        <Route path="/perfil" element={<Perfil />} />
+        <Route path="/editar-perfil" element={<EdicionPerfil />} />
+        <Route path="/subir-ropa" element={<SubidaRopaPage />} />
+        <Route path="/mostrar-ropa" element={<MostrarRopa />} />
+        <Route path="/creador-conjuntos" element={<CreadorConjuntos />} />
+        <Route path="/favoritos" element={<Favoritos />} />
+      </Routes>
+    </BrowserRouter>
   )
 }

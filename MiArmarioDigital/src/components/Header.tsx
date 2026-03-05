@@ -2,19 +2,20 @@ import React from 'react';
 import logoImage from '../assets/MiArmarioLogo.png';
 import { Button } from './Button';
 import '../styles/Header.css';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
 
     <header className="header-container sm:justify-between">
       <div className="header-logo-section">
-        <a href="pages/LandingPublica" className="header-logo-link">
+        <Link to="/" className="header-logo-link">
           <img 
             src={logoImage} 
             alt="Mi Armario Logo" 
             className="header-logo-img" 
           />
-        </a>
+        </Link>
       </div>
 
       <nav className="header-nav">
@@ -27,14 +28,20 @@ const Header = () => {
       </nav>
 
       <div className="header-buttons-section">
-        <Button 
-            nombre="Iniciar Sesion" 
-            class="header-btn-login"
-        />
-        <Button 
-            nombre="Registrarse" 
-            class="header-btn-register" 
-        />
+
+          <Link to="/login">
+            <Button 
+                nombre="Iniciar Sesion" 
+                class="header-btn-login"
+            />
+          </Link>
+
+        <Link to="/register">
+          <Button 
+              nombre="Registrarse" 
+              class="header-btn-register" 
+          />
+        </Link>
       </div>
     </header>
   );

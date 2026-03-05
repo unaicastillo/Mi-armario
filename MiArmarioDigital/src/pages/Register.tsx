@@ -4,7 +4,9 @@ import { FormRegister } from '../components/form/FormRegister'
 export const Register = () => {
     return (
         <>
-            <FormRegister/>
+            <div className="login">
+                <FormRegister/>
+            </div>
         </>
     )
 }

@@ -6,5 +6,6 @@
 @import "./styles/creadorConjuntos.css";
 @import "./styles/mostrarRopa.css";
 @import "./styles/Footer.css";
+@import "./styles/Registro.css";
 
 @tailwind utilities;

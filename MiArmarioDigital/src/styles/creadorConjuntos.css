@@ -1,0 +1,51 @@
+@reference "tailwindcss";
+
+@layer components {
+  .creador-page {
+    @apply min-h-screen bg-white text-gray-900 ;
+  }
+
+  .creador-main {
+    @apply w-full h-[90vh];
+  }
+
+  .creador-hero {
+    @apply mx-auto flex w-full max-w-6xl flex-col gap-6 px-4 py-10 sm:px-6 lg:px-8;
+  }
+
+  .creador-hero-text {
+    @apply flex flex-col gap-2;
+  }
+
+  .creador-hero-text h1 {
+    @apply text-3xl font-semibold tracking-tight sm:text-4xl;
+  }
+
+  .creador-hero-text p {
+    @apply text-base text-gray-600 sm:text-lg;
+  }
+
+  .creador-hero-cta {
+    @apply flex w-full items-start sm:items-center sm:justify-start;
+  }
+
+  .creador-cta {
+    @apply w-full sm:w-auto;
+  }
+
+  .creador-grid {
+    @apply grid gap-5 pt-2 sm:grid-cols-2 lg:grid-cols-3;
+  }
+
+  .creador-card {
+    @apply flex flex-col gap-2 rounded-2xl border border-amber-100 bg-white/80 p-5 shadow-sm backdrop-blur transition hover:-translate-y-0.5 hover:shadow-md;
+  }
+
+  .creador-card h2 {
+    @apply text-lg font-semibold;
+  }
+
+  .creador-card p {
+    @apply text-sm text-gray-600;
+  }
+}

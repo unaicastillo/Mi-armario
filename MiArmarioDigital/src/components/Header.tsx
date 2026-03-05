@@ -5,7 +5,8 @@ import '../styles/Header.css';
 
 const Header = () => {
   return (
-    <header className="header-container">
+
+    <header className="header-container sm:justify-between">
       <div className="header-logo-section">
         <a href="pages/LandingPublica" className="header-logo-link">
           <img 

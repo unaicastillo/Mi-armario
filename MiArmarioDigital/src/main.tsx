@@ -10,7 +10,7 @@ import './index.css'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <div className='login'>
-      <Register/>
+      <Register></Register>
     </div>
     <App></App>
   </StrictMode>,

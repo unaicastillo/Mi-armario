@@ -1,6 +1,7 @@
 import React from 'react'
 import { Input } from './Input'
 import { Button } from '../Button'
+import { Link } from 'react-router-dom'
 
 export const Form = () => {
     return (
@@ -12,8 +13,9 @@ export const Form = () => {
                 <div className="inputs-form">
                     <Input tipo="mail" nombreInput="Correo" texto="" ph="Introduce tu correo electrónico" />
                     <Input tipo="password" nombreInput="Contraseña" texto="" ph="Introduce tu contraseña" />
-
-                    <Button nombre="Iniciar sesion" />
+                    <Link to="/home">
+                        <Button nombre="Iniciar sesion" class="btn"/>
+                    </Link>
                 </div>
                 <a href="">¿Has olvidado tu contraseña?</a>
             </div>

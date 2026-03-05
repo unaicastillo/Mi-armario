@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { Button } from "../Button"
 import { Input } from "./Input"
 
@@ -17,8 +18,10 @@ export const FormRegister = () => {
                     <Input tipo="password" nombreInput="Contraseña" texto="" ph="Introduce tu contraseña" />
                     
                     <Input tipo="password" nombreInput="Repite la contraseña" texto="" ph="Introduce tu contraseña" />
-
-                    <Button nombre="Registrarse" class={""} />
+                    
+                    <Link to="/home">
+                        <Button nombre="Registrarse" class="btn" />
+                    </Link>
                 </div>
             </div>
 

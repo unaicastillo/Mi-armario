@@ -1,7 +1,8 @@
-import React from 'react'
 import Header from '../components/Header'
 import { Footer } from '../components/footer'
 import { Button } from '../components/Button'
+
+const prendaImagen = 'https://www.dcostal.com/2912-thickbox_default/camisa-lisa-oxford-marino.jpg'
 
 export const MostrarRopa = () => {
   return (
@@ -20,21 +21,25 @@ export const MostrarRopa = () => {
 
           <div className="mostrar-grid">
             <article className="mostrar-card">
+              <img className="mostrar-card-image" src={prendaImagen}  />
               <h2>Prenda 1</h2>
               <p>Descripcion breve de la prenda.</p>
             </article>
 
             <article className="mostrar-card">
+              <img className="mostrar-card-image" src={prendaImagen} />
               <h2>Prenda 2</h2>
               <p>Descripcion breve de la prenda.</p>
             </article>
 
             <article className="mostrar-card">
+              <img className="mostrar-card-image" src={prendaImagen}  />
               <h2>Prenda 3</h2>
               <p>Descripcion breve de la prenda.</p>
             </article>
 
             <article className="mostrar-card">
+              <img className="mostrar-card-image" src={prendaImagen} />
               <h2>Prenda 4</h2>
               <p>Descripcion breve de la prenda.</p>
             </article>

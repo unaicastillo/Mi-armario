@@ -1,14 +1,13 @@
 import { Form } from "../components/form/Form"
+import Header from "../components/Header"
 
 export const LogIn = () => {
   return (
     <>
   
-        {/* <img src=".\src\assets\MiArmarioLogo.png" alt="Logo de MiArmarioDigital" className="logo"/> */}
-        <div className="login">
-          <Form />
-        </div>
-
+      <div className="login">
+        <Form />
+      </div>
     </>
   )
 }

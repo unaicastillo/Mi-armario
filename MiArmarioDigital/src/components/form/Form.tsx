@@ -8,16 +8,16 @@ export const Form = () => {
         <>
             <div className="form-style">
                 <div className='header-form'>
-                    <h1>Inicia Sesión</h1>
+                    <h1 className="text-2xl sm:text-3xl">Inicia Sesión</h1>
                 </div>
                 <div className="inputs-form">
                     <Input tipo="mail" nombreInput="Correo" texto="" ph="Introduce tu correo electrónico" />
                     <Input tipo="password" nombreInput="Contraseña" texto="" ph="Introduce tu contraseña" />
-                    <Link to="/home">
-                        <Button nombre="Iniciar sesion" class="header-btn-login"/>
+                    <Link to="/home" className="w-full">
+                        <Button nombre="Iniciar sesion" class="header-btn-login w-full"/>
                     </Link>
                 </div>
-                <a href="">¿Has olvidado tu contraseña?</a>
+                <a href="" className="text-sm sm:text-base hover:underline">¿Has olvidado tu contraseña?</a>
             </div>
 
         </>

@@ -8,7 +8,7 @@ const LandingUsuarioIniciado = () => {
   return (
    
     <div>
-         <Header/>
+        <Header/>
         <div className="relative h-[500px] flex flex-col justify-center items-center text-white px-4 overflow-hidden bg-[#181818]">
             <img 
                 src={bannerImage} 

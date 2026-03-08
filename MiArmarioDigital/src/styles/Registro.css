@@ -2,32 +2,25 @@
 
 @layer components {
 
-    /* FONDO DE PÁGINA:
-       Replicamos el degradado de tu imagen pero usando TU color Fuchsia (#C026D3)
-       mezclado con un tono más suave para crear el efecto. */
+    /* FONDO DE PÁGINA */
     .register-page {
-        @apply min-h-screen w-full flex items-center justify-center p-4;
-        /* Degradado desde tu Fuchsia hacia un tono un poco más claro/rosado */
+        @apply min-h-screen w-full flex items-center justify-center p-4 py-8 overflow-y-auto;
         @apply bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-fuchsia-400 to-fuchsia-600;
     }
 
-    /* TARJETA DEL FORMULARIO (Ahora es blanca) */
+    /* TARJETA DEL FORMULARIO */
     .form-style {
-        /* Fondo blanco puro para contraste máximo */
-        @apply bg-white rounded-3xl shadow-2xl w-full;
+        @apply bg-white rounded-3xl shadow-2xl w-full h-fit flex-shrink-0;
         @apply flex flex-col p-8 sm:p-12;
-        
-        /* Límites de anchura */
-        @apply max-w-[450px] mx-auto;
+        @apply max-w-[450px] mx-auto transition-all duration-300;
     }
 
     /* CABECERA */
     .header-form {
-        @apply mb-10 text-center;
+        @apply mb-3 text-center;
     }
 
     .header-form h1 {
-        /* Texto oscuro (#18181B) para que se lea sobre blanco */
         @apply text-3xl font-bold text-[#18181B] tracking-tight;
     }
 
@@ -36,26 +29,16 @@
         @apply flex flex-col gap-6;
     }
 
-    /* ESTILO DE INPUT "UNDERLINE" (Como en la foto)
-       En lugar de una caja, es solo una línea abajo. */
+    /* ESTILO DE INPUT */
     .input-field-line {
         @apply w-full py-2 bg-transparent outline-none transition-all duration-300;
-        
-        /* Borde solo abajo, color gris suave (#D4D4D8) */
         @apply border-b-2 border-[#D4D4D8] rounded-none px-0;
-        
-        /* Texto oscuro */
         @apply text-[#18181B] font-medium;
-
-        /* Placeholder gris claro */
         @apply placeholder:text-[#71717A]/60;
-
-        /* AL HACER FOCUS: La línea se vuelve de tu color Fuchsia (#C026D3) */
         @apply focus:border-[#C026D3];
     }
     
-    /* ETIQUETAS (Labels) 
-       Para que se parezca a la foto, el texto "Usuario", "Correo" debe ir encima */
+    /* ETIQUETAS */
     .input-label {
         @apply block text-sm font-semibold text-[#18181B] mb-1;
     }

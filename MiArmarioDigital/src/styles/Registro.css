@@ -6,7 +6,7 @@
        Replicamos el degradado de tu imagen pero usando TU color Fuchsia (#C026D3)
        mezclado con un tono más suave para crear el efecto. */
     .register-page {
-        @apply min-h-screen w-full flex items-center justify-center p-4;
+        @apply min-h-screen w-full flex items-center justify-center p-4 fixed; 
         /* Degradado desde tu Fuchsia hacia un tono un poco más claro/rosado */
         @apply bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-fuchsia-400 to-fuchsia-600;
     }

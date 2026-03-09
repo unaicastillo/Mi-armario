@@ -29,4 +29,24 @@
         @apply p-2.5
     }
     
+    /* Luz morada en las páginas de Login, Register y Edicion de perfil */
+    #shadow_box {
+        @apply absolute
+            justify-self-center
+            bg-[#B200B8]
+            blur-[165px]
+            w-[80vh]
+            h-[102vh]
+            top-[80vh]
+            translate-y-[-83%]
+            rotate-z-66
+            -z-10
+    }
+
+    #btn_favorito{
+        @apply w-[42px] h-[42px] justify-self-end bg-none shadow-none;
+    }
+    #img_favorito{
+        @apply w-[100%] h-[100%] justify-self-center rounded-full transition-all hover:transition-shadow hover:shadow-lg hover:shadow-yellow-500/100;
+    }
 }

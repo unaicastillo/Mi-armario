@@ -1,6 +1,7 @@
 import Header from '../components/Header'
 import { Footer } from '../components/footer'
 import { Button } from '../components/Button'
+import { Link } from 'react-router-dom'
 
 const prendaImagen = 'https://www.dcostal.com/2912-thickbox_default/camisa-lisa-oxford-marino.jpg'
 
@@ -16,7 +17,9 @@ export const MostrarRopa = () => {
             <p>Explora tus prendas almacenadas en el armario digital.</p>
           </div>
           <div className="mostrar-hero-cta">
-            <Button nombre="Subir prenda" class="btn mostrar-cta" />
+            <Link to="/subir-ropa">
+              <Button nombre="Subir prenda" class="btn mostrar-cta" />
+            </Link>
           </div>
 
           <div className="mostrar-grid">

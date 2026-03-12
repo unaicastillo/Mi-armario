@@ -13,6 +13,7 @@ import LandingUsuarioIniciadoPage from './pages/LandingUsuarioIniciadoPage'
 import { Perfil } from './pages/Perfil'
 import SubidaRopaPage from './pages/SubidaRopaPage'
 import { EdicionPerfil } from './EdicionPerfil'
+import { Graficos } from './pages/Graficos'
 
 export const App = () => {
   return (
@@ -28,6 +29,7 @@ export const App = () => {
         <Route path="/mostrar-ropa" element={<MostrarRopa />} />
         <Route path="/creador-conjuntos" element={<CreadorConjuntos />} />
         <Route path="/favoritos" element={<Favoritos />} />
+        <Route path='/estadisticas' element={<Graficos/>}/>
       </Routes>
     </BrowserRouter>
   )

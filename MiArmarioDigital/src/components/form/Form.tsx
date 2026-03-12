@@ -11,8 +11,8 @@ export const Form = () => {
                     <h1>Inicia Sesión</h1>
                 </div>
                 <div className="inputs-form">
-                    <Input tipo="mail" nombreInput="Correo" texto="" ph="Introduce tu correo electrónico" onChange={} />
-                    <Input tipo="password" nombreInput="Contraseña" texto="" ph="Introduce tu contraseña" onChange={}/>
+                    <Input tipo="mail" nombreInput="Correo" texto="" ph="Introduce tu correo electrónico" />
+                    <Input tipo="password" nombreInput="Contraseña" texto="" ph="Introduce tu contraseña" />
                     <Link to="/home">
                         <Button nombre="Iniciar sesion" class="btn"/>
                     </Link>

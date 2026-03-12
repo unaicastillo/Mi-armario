@@ -3,6 +3,7 @@ import Header from '../components/Header';
 // import { Footer } from '../components/footer'; 
 import { Input } from '../components/form/Input'; 
 import bannerImage from '../assets/MiArmarioLogo.png';
+import { Footer } from '../components/footer';
 
 const LandingPublica = () => {
   return (
@@ -38,7 +39,7 @@ const LandingPublica = () => {
         
       </div>
 
-      {/* <Footer /> */}
+       <Footer />
       
     </div>
   );

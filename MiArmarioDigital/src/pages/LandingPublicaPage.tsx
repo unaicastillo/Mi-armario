@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from '../components/Header'; 
-// import { Footer } from '../components/footer'; 
 import { Input } from '../components/form/Input'; 
 import bannerImage from '../assets/MiArmarioLogo.png';
 

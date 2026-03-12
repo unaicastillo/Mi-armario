@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "../Button";
-import { Input } from "../form/Input"; // Asegúrate de que esta ruta a tu Input es correcta
+import { Input } from "../form/Input";
 
 export const FormRegister = () => {
     // Estados para guardar la información del formulario

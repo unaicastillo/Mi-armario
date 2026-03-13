@@ -25,6 +25,13 @@ const Header = () => {
         <a href="#conocenos" className="header-nav-link">
           Conócenos
         </a>
+         <Link to='/estadisticas'>
+          <Button 
+              nombre="Estadisticas"
+              class="header-nav-link"
+          />
+
+        </Link>
       </nav>
 
       <div className="header-buttons-section">

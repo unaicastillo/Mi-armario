@@ -26,7 +26,7 @@ export const Form = () => {
             console.log("Todo validado. Listo para iniciar sesión en Supabase:", { correo, password });
 
             // Redirección a la página de usuario iniciado
-            navigate("/inicio");
+            navigate("/home");
 
         } catch (err) {
             setError("Ocurrió un error inesperado.");

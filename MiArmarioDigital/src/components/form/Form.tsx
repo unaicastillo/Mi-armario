@@ -2,9 +2,10 @@ import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { Button } from "../Button"; 
 import { Input } from "./Input";
+import { supabase } from "../../supabase/client"; 
 
 export const Form = () => {
-    // Estadoslistos para Supabase
+    // Estados para Supabase
     const [correo, setCorreo] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState<string | null>(null);
@@ -22,14 +23,27 @@ export const Form = () => {
         }
 
         try {
-            // TODO: Aquí irá código de Supabase
-            console.log("Todo validado. Listo para iniciar sesión en Supabase:", { correo, password });
+            // 2. Llamada real a Supabase para iniciar sesión
+            const { data, error: supabaseError } = await supabase.auth.signInWithPassword({
+                email: correo,
+                password: password,
+            });
 
-            // Redirección a la página de usuario iniciado
+            // Si falla (ej. contraseña incorrecta o el correo no existe)
+            if (supabaseError) {
+                // Ponemos un mensaje genérico por seguridad
+                setError("Correo o contraseña incorrectos."); 
+                return;
+            }
+
+            console.log("¡Sesión iniciada con éxito en Supabase!", data.user);
+
+            // 3. Redirección a la página principal del usuario
             navigate("/inicio");
 
         } catch (err) {
-            setError("Ocurrió un error inesperado.");
+            setError("Ocurrió un error inesperado al conectar con el servidor.");
+            console.error(err);
         }
     };
 
@@ -44,7 +58,7 @@ export const Form = () => {
                 {error && <p style={{ color: "#d9534f", fontWeight: "bold", textAlign: "center", marginBottom: "15px" }}>{error}</p>}
                 
                 <Input
-                    tipo="email"
+                    tipo="email" // Mucho mejor usar "email" aquí para que el teclado del móvil ponga el @
                     nombreInput="Correo"
                     texto={correo}
                     ph="Introduce tu correo electrónico"

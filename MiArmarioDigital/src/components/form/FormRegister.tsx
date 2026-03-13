@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "../Button";
 import { Input } from "../form/Input";
+import { supabase } from "../../supabase/client.ts";
 
 export const FormRegister = () => {
     // Estados para guardar la información del formulario
@@ -29,30 +30,29 @@ export const FormRegister = () => {
         }
 
         try {
-            // TODO: Aquí irá tu código de Supabase más adelante.
-            // Será algo muy parecido a esto:
-            /*
+            // Llamada REAL a Supabase para registrar al usuario
             const { data, error: supabaseError } = await supabase.auth.signUp({
                 email: correo,
                 password: password,
                 options: {
-                    data: { username: usuario }
+                    data: { username: usuario } // Guardamos el usuario extra
                 }
             });
 
+            // Si Supabase devuelve un error (ej: correo ya en uso, contraseña corta)
             if (supabaseError) {
                 setError(supabaseError.message);
                 return;
             }
-            */
 
-            // Por ahora, solo mostramos por consola que los datos están listos
-            console.log("Todo validado. Listo para enviar a Supabase:", { usuario, correo, password });
-
+            console.log("¡Usuario registrado con éxito en Supabase!", data.user);
+            
+            // Redirigimos al usuario
             navigate("/home");
 
         } catch (err) {
-            setError("Ocurrió un error inesperado.");
+            setError("Ocurrió un error inesperado al conectar con el servidor.");
+            console.error(err);
         }
     };
 
@@ -64,7 +64,7 @@ export const FormRegister = () => {
 
             <form className="inputs-form" onSubmit={handleSubmit}>
 
-            {error && <p style={{ color: "#d9534f", fontWeight: "bold", textAlign: "center", marginBottom: "15px" }}>{error}</p>}
+                {error && <p style={{ color: "#d9534f", fontWeight: "bold", textAlign: "center", marginBottom: "15px" }}>{error}</p>}
                 
                 <Input
                     tipo="text"

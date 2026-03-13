@@ -1,0 +1,102 @@
+{
+  "login": {
+    "title": "Inicia sesión",
+    "email": "Correo",
+    "email_placeholder": "Introduce tu correo electrónico",
+    "password": "Contraseña",
+    "password_placeholder": "Introduce tu contraseña",
+    "submit": "Iniciar sesión",
+    "no_account": "¿No tienes cuenta?",
+    "register_here": "Regístrate aquí",
+    "error_required": "Por favor, rellena todos los campos.",
+    "error_unexpected": "Ocurrió un error inesperado."
+  },
+  "register": {
+    "title": "Registro",
+    "username": "Usuario",
+    "username_placeholder": "Introduce tu usuario",
+    "repeat_password": "Repite la contraseña",
+    "submit": "Registrarse",
+    "password_mismatch": "Las contraseñas no coinciden."
+  },
+  "header": {
+    "contact": "Contáctanos",
+    "about": "Conócenos",
+    "stats": "Estadísticas",
+    "login": "Iniciar sesión",
+    "register": "Registrarse"
+  },
+  "footer": {
+    "help": "Ayuda",
+    "support": "Centro de soporte",
+    "terms": "Términos y condiciones",
+    "privacy": "Política de privacidad",
+    "contact": "Contacto",
+    "follow": "Síguenos",
+    "brand_description": "Tu compañero definitivo para la gestión de estilo personal. Digitaliza tu guardarropa, planifica tus outfits diarios y descubre nuevas combinaciones con la ropa que ya tienes. Simplifica tus mañanas y eleva tu estilo.",
+    "rights": "Todos los derechos reservados."
+  },
+  "outfits": {
+    "recent": "Lo que has usado hace poco",
+    "outfit": "Outfit"
+  },
+  "landing": {
+    "title1": "Organiza tu estilo.",
+    "title2": "Encuentra tu look perfecto.",
+    "subtitle": "Explora y busca nuevas prendas y crea combinaciones únicas."
+  },
+  "wardrobe": {
+    "title": "Ropa guardada",
+    "subtitle": "Explora tus prendas almacenadas en el armario digital.",
+    "upload": "Subir prenda",
+    "garment": "Prenda",
+    "description": "Descripción breve de la prenda."
+  },
+  "upload": {
+    "title": "Sube tu prenda",
+    "subtitle": "Añade una nueva pieza a tu armario digital.",
+    "photo": "Foto de la prenda",
+    "name": "Nombre de la prenda",
+    "name_placeholder": "Ej. Camiseta blanca básica",
+    "category": "Categoría",
+    "select": "Selecciona...",
+    "color": "Color",
+    "select_color": "Elige color...",
+    "notes": "Notas (Opcional)",
+    "notes_placeholder": "¿Para qué ocasión es? ¿Marca?",
+    "cancel": "Cancelar",
+    "save": "Guardar prenda",
+    "categories": {
+      "tops": "Camisetas / Tops",
+      "bottoms": "Pantalones / Faldas",
+      "dresses": "Vestidos / Monos",
+      "shoes": "Zapatos",
+      "accessories": "Accesorios"
+    },
+    "colors": {
+      "black": "Negro",
+      "white": "Blanco",
+      "grey": "Gris",
+      "blue": "Azul",
+      "red": "Rojo",
+      "green": "Verde",
+      "multi": "Varios / Multicolor"
+    }
+  },
+  "outfit_creator": {
+    "title": "Creador de conjuntos",
+    "subtitle": "Vista visual de tus combinaciones guardadas.",
+    "new": "Nuevo conjunto",
+    "outfit": "Conjunto",
+    "description": "Descripción breve del look."
+  },
+  "stats": {
+    "users_registered": "Usuarios registrados en la app",
+    "outfits_created": "Conjuntos creados por los usuarios",
+    "months": {
+      "jan": "Ene",
+      "feb": "Feb",
+      "mar": "Mar"
+    }
+  }
+}

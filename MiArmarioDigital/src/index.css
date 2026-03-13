@@ -10,5 +10,6 @@
 @import "./styles/mostrarRopa.css";
 @import "./styles/Footer.css";
 @import "./styles/Registro.css";
+@import "./styles/perfil.css";
 
 @tailwind utilities;

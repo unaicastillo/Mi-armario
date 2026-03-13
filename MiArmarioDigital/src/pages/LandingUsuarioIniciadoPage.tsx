@@ -18,7 +18,7 @@ const LandingUsuarioIniciado = () => {
     return (
         <div>
             {/* --- CABECERA --- */}
-            <Header />
+            <HeaderSesion/>
 
             {/* --- BANNER PRINCIPAL --- */}
             <div className="relative h-[400px] md:h-[500px] flex flex-col justify-center items-center text-white px-4 overflow-hidden bg-[#181818]">

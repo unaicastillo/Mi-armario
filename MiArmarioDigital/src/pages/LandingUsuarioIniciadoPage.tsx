@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { TarjetaOutfits } from '../components/TarjetaOutfits';
 import bannerImage from '../assets/MiArmarioLogo.png';
-import Header from '../components/Header';
+import HeaderBySession from '../components/HeaderBySession';
 import { Footer } from '../components/footer';
 import { useTranslation } from "react-i18next";
-import HeaderSesion from '../components/HeaderSesion';
 
 const LandingUsuarioIniciado = () => {
     const { t } = useTranslation();
@@ -18,7 +17,7 @@ const LandingUsuarioIniciado = () => {
     return (
         <div>
             {/* --- CABECERA --- */}
-            <Header />
+            <HeaderBySession />
 
             {/* --- BANNER PRINCIPAL --- */}
             <div className="relative h-[400px] md:h-[500px] flex flex-col justify-center items-center text-white px-4 overflow-hidden bg-[#181818]">

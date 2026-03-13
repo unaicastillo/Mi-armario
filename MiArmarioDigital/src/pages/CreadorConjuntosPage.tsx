@@ -1,5 +1,4 @@
-import React from 'react'
-import Header from '../components/Header'
+import HeaderBySession from '../components/HeaderBySession'
 import { Button } from '../components/Button'
 import { Footer } from '../components/footer'
 import { useTranslation } from "react-i18next";
@@ -10,7 +9,7 @@ export const CreadorConjuntos = () => {
   const { t } = useTranslation();
   return (
     <div className="creador-page">
-      <Header />
+      <HeaderBySession />
 
       <main className="creador-main">
         <section className="creador-hero">

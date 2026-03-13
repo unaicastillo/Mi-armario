@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Header from '../components/Header';
+import HeaderBySession from '../components/HeaderBySession';
 import { Input } from '../components/form/Input';
 import bannerImage from '../assets/MiArmarioLogo.png';
 import { Footer } from '../components/footer';
@@ -27,7 +27,7 @@ const LandingPublica = () => {
 
             {/* Contenedor Principal */}
             <div>
-                <Header />
+                <HeaderBySession />
                 <div className="relative h-[400px] md:h-[500px] flex flex-col justify-center items-center text-white px-4 overflow-hidden bg-[#181818]">
 
                     {/* Imagen de Fondo */}

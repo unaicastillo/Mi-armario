@@ -1,4 +1,4 @@
-import Header from '../components/Header'
+import HeaderBySession from '../components/HeaderBySession'
 import { Footer } from '../components/footer'
 import { Button } from '../components/Button'
 import { Link } from 'react-router-dom'
@@ -10,7 +10,7 @@ export const MostrarRopa = () => {
   const { t } = useTranslation();
   return (
     <div className="mostrar-page">
-      <Header />
+      <HeaderBySession />
 
       <main className="mostrar-main">
         <section className="mostrar-hero">

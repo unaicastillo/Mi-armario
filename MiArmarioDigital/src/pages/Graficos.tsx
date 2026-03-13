@@ -1,6 +1,4 @@
-import React from 'react'
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import Header from '../components/Header';
+import HeaderBySession from '../components/HeaderBySession';
 import { Footer } from '../components/footer';
 import { LineChartElement } from '../components/LineChartElement';
 import { useTranslation } from "react-i18next";
@@ -23,7 +21,7 @@ export const Graficos = () => {
     const { t } = useTranslation();
     return (
         <>
-            <Header/>
+            <HeaderBySession/>
             <div className="grid grid-cols-2 gap-6 m-1.5">
                 <LineChartElement items={usuariosRegistrados} title={t('stats.users_registered')}/>
                 <LineChartElement items={ConjuntosCreados} title={t('stats.outfits_created')}/>

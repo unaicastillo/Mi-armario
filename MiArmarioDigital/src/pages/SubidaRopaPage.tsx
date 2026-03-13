@@ -1,5 +1,4 @@
-import React from 'react';
-import Header from '../components/Header';
+import HeaderBySession from '../components/HeaderBySession';
 import { Footer } from '../components/footer';
 import { Input } from '../components/form/Input';
 import { Button } from '../components/Button';
@@ -15,7 +14,7 @@ const PagSubidaRopa = () => {
     <div className="min-h-screen font-sans bg-gray-50 flex flex-col justify-between overflow-x-hidden w-full">
       
       {/* 1. HEADER */}
-      <Header />
+    <HeaderBySession />
 
       {/* 2. CONTENIDO CENTRAL */}
       <main className="flex-grow max-w-7xl w-full mx-auto px-4 md:px-6 py-8 md:py-12 box-border">

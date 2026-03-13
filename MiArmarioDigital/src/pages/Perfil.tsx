@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { Button } from "../components/Button";
-import HeaderSesion from "../components/HeaderSesion";
+import HeaderBySession from "../components/HeaderBySession";
 import { Footer } from "../components/footer";
 
 export const Perfil = () => {
@@ -13,7 +13,7 @@ export const Perfil = () => {
 
   return (
     <>
-    <HeaderSesion></HeaderSesion>
+    <HeaderBySession></HeaderBySession>
     <div className="profile_box">
       
       <div id="shadow_box"></div>

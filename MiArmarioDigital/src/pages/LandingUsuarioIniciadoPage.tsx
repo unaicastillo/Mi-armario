@@ -4,6 +4,7 @@ import bannerImage from '../assets/MiArmarioLogo.png';
 import Header from '../components/Header';
 import { Footer } from '../components/footer';
 import { useTranslation } from "react-i18next";
+import HeaderSesion from '../components/HeaderSesion';
 
 const LandingUsuarioIniciado = () => {
     const { t } = useTranslation();

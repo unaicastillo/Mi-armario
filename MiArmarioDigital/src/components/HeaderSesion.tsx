@@ -3,11 +3,12 @@ import logoImage from '../assets/MiArmarioLogo.png';
 import { Button } from './Button';
 import '../styles/Header.css';
 import { Link } from 'react-router-dom';
-import { useTranslation } from "react-i18next";
-import i18n from '../i18n';
 
-const Header = () => {
-  const { t } = useTranslation();
+const HeaderSesion = () => {
+
+    const img_perfil = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png";
+    const nombre = "fsdjhgkasjhdgfakshgdfkasjhdgfadf";
+
 
 
   const [showRopa, setShowRopa] = useState(false);
@@ -18,17 +19,17 @@ const Header = () => {
     <header className="header-container sm:justify-between">
       <div className="header-logo-section">
         <Link to="/" className="header-logo-link">
-          <img
-            src={logoImage}
-            alt="Mi Armario Logo"
-            className="header-logo-img"
+          <img 
+            src={logoImage} 
+            alt="Mi Armario Logo" 
+            className="header-logo-img" 
           />
         </Link>
       </div>
 
       <nav className="header-nav">
 
-        {/* Dropdown Ropa */}
+
         <div
           className="dropdown"
           onMouseEnter={() => setShowRopa(true)}
@@ -45,7 +46,6 @@ const Header = () => {
           )}
         </div>
 
-        {/* Dropdown Otros */}
         <div
           className="dropdown"
           onMouseEnter={() => setShowOtros(true)}
@@ -61,33 +61,17 @@ const Header = () => {
         </div>
       </nav>
 
+      <div className="header-login-buttons-section">
 
-      <div className="header-buttons-section">
-
-        <Link to="/login">
-          <Button
-            nombre={t('header.login')}
-            class="header-btn-login"
-          />
+        <Link to="/perfil" className='header_user_box'>
+            <button className='perfil_box'>
+                <img className='img_perfil_header' src={img_perfil} />
+                <h2>{nombre}</h2>
+            </button>
         </Link>
-
-        <Link to="/register">
-          <Button
-            nombre={t('header.register')}
-            class="header-btn-register"
-          />
-        </Link>
-
-        <button onClick={() => i18n.changeLanguage('en')}>
-          EN
-        </button>
-
-        <button onClick={() => i18n.changeLanguage('es')}>
-          ES
-        </button>
       </div>
     </header>
   );
 };
 
-export default Header;
+export default HeaderSesion;

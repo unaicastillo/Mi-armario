@@ -3,7 +3,12 @@ import Header from '../components/Header';
 import { Input } from '../components/form/Input'; 
 import bannerImage from '../assets/MiArmarioLogo.png';
 import { Footer } from '../components/footer';
+import { useTranslation } from "react-i18next";
 import { Boton_tema } from '../components/Boton_tema';
+
+const LandingPublica = () => {
+  const { t } = useTranslation();
+
 
 const LandingPublica = () => {
   // Estado para controlar cuándo se activan las animaciones
@@ -38,15 +43,15 @@ const LandingPublica = () => {
                 <h1 className={`text-4xl md:text-6xl font-bold mb-6 drop-shadow-xl text-white transition-all duration-1000 ease-out ${
                     isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-6'
                 }`}>
-                    Organiza tu estilo. <br/>
-                    <span className="text-[#c026d3]">Encuentra tu look perfecto.</span>
+                    {t('landing.title1')} <br/>
+                    <span className="text-[#c026d3]">{t('landing.title2')}</span>
                 </h1>
                 
                 {/* Párrafo */}
                 <p className={`text-lg md:text-xl mb-10 opacity-90 drop-shadow-md text-gray-200 px-2 transition-all duration-700 delay-300 ease-in-out ${
                     isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
                 }`}>
-                    Explora y busca nuevas prendas y crea combinaciones únicas.
+                    {t('landing.subtitle')}
                 </p>
 
                 {/* Barra blanca*/}

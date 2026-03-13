@@ -26,7 +26,7 @@ export const MostrarRopa = () => {
 
           <div className="mostrar-grid">
             <article className="mostrar-card">
-              <img className="mostrar-card-image" src={prendaImagen}  />
+              <img className="mostrar-card-image" src={prendaImagen} />
               <h2>{t('wardrobe.garment')} 1</h2>
               <p>{t('wardrobe.description')}</p>
             </article>
@@ -38,7 +38,7 @@ export const MostrarRopa = () => {
             </article>
 
             <article className="mostrar-card">
-              <img className="mostrar-card-image" src={prendaImagen}  />
+              <img className="mostrar-card-image" src={prendaImagen} />
               <h2>{t('wardrobe.garment')} 3</h2>
               <p>{t('wardrobe.description')}</p>
             </article>

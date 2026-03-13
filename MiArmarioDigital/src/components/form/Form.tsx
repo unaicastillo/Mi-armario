@@ -4,16 +4,11 @@ import { Button } from "../Button";
 import { Input } from "./Input";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18n";
-
-export const Form = () => {
-    
-    const { t } = useTranslation();
-    
-    // Estadoslistos para Supabase
-
 import { supabase } from "../../supabase/client"; 
 
+
 export const Form = () => {
+    const { t } = useTranslation();
     // Estados para Supabase
     const [correo, setCorreo] = useState("");
     const [password, setPassword] = useState("");

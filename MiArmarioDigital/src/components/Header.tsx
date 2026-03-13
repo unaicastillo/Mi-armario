@@ -26,10 +26,10 @@ const Header = () => {
         </Link>
       </div>
 
-      <nav className="header-nav">
+      {/* <nav className="header-nav"> */}
 
         {/* Dropdown Ropa */}
-        <div
+        {/* <div
           className="dropdown"
           onMouseEnter={() => setShowRopa(true)}
           onMouseLeave={() => setShowRopa(false)}
@@ -43,10 +43,10 @@ const Header = () => {
               <Link to="/favoritos">Favoritos</Link>
             </div>
           )}
-        </div>
+        </div> */}
 
         {/* Dropdown Otros */}
-        <div
+        {/* <div
           className="dropdown"
           onMouseEnter={() => setShowOtros(true)}
           onMouseLeave={() => setShowOtros(false)}
@@ -59,7 +59,7 @@ const Header = () => {
             </div>
           )}
         </div>
-      </nav>
+      </nav> */}
 
 
       <div className="header-buttons-section">

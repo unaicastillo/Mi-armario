@@ -32,5 +32,6 @@ export const App = () => {
         <Route path='/estadisticas' element={<Graficos/>}/>
       </Routes>
     </BrowserRouter>
+
   )
 }

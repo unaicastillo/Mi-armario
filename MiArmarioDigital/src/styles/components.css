@@ -1,0 +1,56 @@
+@layer components{
+    .form-style{
+        @apply flex flex-col items-center 
+        border-2 border-black rounded-2xl 
+        w-full max-w-xs sm:max-w-md gap-5 bg-white shadow-lg 
+        p-4 sm:p-6 mx-4;   
+    }
+
+    .header-form{
+        @apply w-full flex justify-center text-black rounded-t-2xl font-bold mt-1.5
+    }
+
+    .inputs-form{
+        @apply flex flex-col items-center gap-6 sm:gap-10 w-full
+    }
+
+    .input-style{
+        @apply grid items-center w-full
+    }
+    input{
+        @apply border-b-2 border-gray-600 px-2 py-2 text-sm sm:text-base
+    }
+    .logo{
+        @apply w-1/9 h-1/9
+    }
+    .login{
+        @apply min-h-screen w-full flex items-center justify-center bg-gradient-to-tl from-fuchsia-600 to-white px-4 py-8;
+    }
+    a{
+        @apply p-2.5 text-center
+    }
+
+    #root{
+        @apply relative z-0
+    }
+    /* Luz morada en las páginas de Login, Register y Edicion de perfil */
+    #shadow_box {
+        @apply absolute
+            justify-self-center
+            bg-[#B200B8]
+            blur-[165px]
+            w-[80vh]
+            h-[102vh]
+            top-[80vh]
+            translate-y-[-83%]
+            rotate-z-66
+            z-[-1]
+    }
+
+    #btn_favorito{
+        @apply w-[42px] h-[42px] justify-self-end bg-none shadow-none;
+    }
+    #img_favorito{
+        @apply w-[100%] h-[100%] justify-self-center rounded-full transition-all hover:transition-shadow hover:shadow-lg hover:shadow-yellow-500/100;
+    }
+}

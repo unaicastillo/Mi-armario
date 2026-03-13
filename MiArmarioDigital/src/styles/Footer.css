@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer components {
+  /* ... (tu .footer-container sigue igual) ... */
+  .footer-container {
+    @apply bg-zinc-900 text-zinc-100 pt-12 px-6 pb-8 mt-auto font-sans;
+  }
+
+  /* MEJORA RESPONSIVE AQUÍ */
+  .footer-content {
+    /* 1. Usamos GRID en lugar de Flex para control exacto */
+    /* Móvil: 1 sola columna. Tablet/Desktop: 3 columnas (o 4 si añades más) */
+    @apply grid grid-cols-1 md:grid-cols-3 gap-10;
+    
+    /* 2. Alineación inteligente */
+    /* Móvil: Texto centrado. Desktop: Texto a la izquierda */
+    @apply text-center md:text-left;
+    
+    @apply max-w-[1200px] mx-auto;
+  }
+
+  /* Ya no necesitamos min-width ni flex-1 aquí gracias al Grid */
+  .footer-section {
+    @apply flex flex-col; 
+  }
+
+  .footer-logo {
+    @apply text-2xl font-bold mb-3 text-fuchsia-600;
+  }
+
+  .footer-tagline {
+    @apply text-sm text-zinc-500 leading-relaxed;
+    /* Centramos el tagline en móvil limitando el ancho para que no se lea mal */
+    @apply mx-auto md:mx-0 max-w-xs md:max-w-none;
+  }
+
+  /* Títulos con la línea decorativa */
+  .footer-section h3 {
+    @apply text-lg mb-4 border-b-2 border-fuchsia-600 inline-block pb-1;
+    /* En móvil, como el texto está centrado, la línea debe estar centrada */
+    @apply mx-auto md:mx-0;
+  }
+
+  .footer-links {
+    @apply list-none p-0 space-y-2; /* space-y-2 añade margen vertical automático */
+  }
+
+  .footer-links a {
+    @apply text-zinc-300 no-underline text-sm transition-all duration-300;
+    @apply hover:text-fuchsia-600 hover:pl-1;
+    /* En móvil quitamos el padding-left al hover si queremos que se mantenga centrado, 
+       o lo dejamos si te gusta el efecto. Lo dejo activo. */
+  }
+
+  /* Redes sociales */
+  .social-icons {
+    @apply flex flex-col gap-3;
+    /* IMPORTANTE: Alinear los items (iconos/links) */
+    /* Móvil: Center. Desktop: Start (izquierda) */
+    @apply items-center md:items-start;
+  }
+
+  .social-link {
+    @apply text-zinc-300 no-underline text-sm hover:text-white hover:underline;
+  }
+
+  .footer-bottom {
+    @apply text-center mt-12 pt-6 border-t border-zinc-800 text-xs text-zinc-500;
+  }
+}

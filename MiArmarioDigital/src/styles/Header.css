@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+.header-container {
+  @apply sticky top-0 z-50 flex justify-between items-center px-4 py-3 bg-white border-b border-gray-200 shadow-sm font-sans md:px-8 md:py-4;
+}
+
+.header-logo-section {
+  @apply flex items-center shrink-0;
+}
+
+.header-logo-link {
+  @apply flex items-center;
+}
+
+.header-logo-img {
+  @apply h-[40px] w-auto block md:h-[60px];
+}
+
+.header-nav {
+  @apply hidden md:flex gap-8 lg:gap-12;
+}
+
+.header-nav-link {
+  @apply text-[#181818] font-medium text-sm lg:text-base hover:text-[#c026d3] transition-colors duration-200;
+}
+
+.header-buttons-section {
+  @apply flex gap-2 items-center md:gap-4;
+}
+
+.header-btn-login {
+  @apply px-3 py-2 text-xs w-auto bg-[#D4D4D8] text-[#181818] rounded-[5px] flex items-center justify-center cursor-pointer font-medium transition-transform active:scale-95 hover:brightness-95 md:w-[130px] md:h-[40px] md:text-base;
+}
+
+.header-btn-register {
+  @apply px-3 py-2 text-xs w-auto bg-[#c026d3] text-white rounded-[5px] flex items-center justify-center cursor-pointer font-medium transition-transform active:scale-95 hover:opacity-90 shadow-md md:w-[110px] md:h-[40px] md:text-base;
+}
+
+
+/* Componentes Header Logueado*/
+
+
+.header-login-buttons-section{
+  @apply h-[64px] border-3 border-[#c026d3] rounded-[35px] pl-[14px] pr-[14px] bg-none hover:bg-[#c026d3] transition-colors duration-200;
+
+}
+
+.header_user_box{
+  @apply flex items-center  ;
+
+}
+.perfil_box{
+  @apply flex items-center gap-[14px];
+}
+
+.perfil_box h2{
+  @apply max-w-[32px] md:max-w-[128px] whitespace-nowrap overflow-hidden text-ellipsis;
+}
+
+.img_perfil_header{
+    @apply w-[42px] h-[42px] rounded-[50%] border-2 ;
+
+
+}
+
+
+
+
+.dropdown {
+  @apply relative inline-block;
+}
+
+.dropdown-button {
+  @apply font-bold px-4 py-2 hover:text-gray-300 cursor-pointer bg-transparent border-0 flex items-center;
+}
+
+.dropdown-content {
+  @apply block absolute top-full left-0 mt-0 flex flex-col bg-white min-w-[180px] shadow-lg z-20;
+}
+
+.dropdown-link {
+  @apply px-4 py-2 text-white no-underline transition-colors duration-200 hover:bg-gray-800;
+}
+
+
+.header-nav {
+  @apply flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-12;
+}
+
+
+

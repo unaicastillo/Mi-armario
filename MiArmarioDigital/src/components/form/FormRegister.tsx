@@ -2,8 +2,12 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "../Button";
 import { Input } from "../form/Input";
+import { useTranslation } from "react-i18next";
 
 export const FormRegister = () => {
+
+    const { t } = useTranslation();
+
     // Estados para guardar la información del formulario
     const [usuario, setUsuario] = useState("");
     const [correo, setCorreo] = useState("");
@@ -19,12 +23,12 @@ export const FormRegister = () => {
 
         // Validaciones
         if (!usuario || !correo || !password) {
-            setError("Por favor, rellena todos los campos.");
+            setError(t('login.error_required'));
             return;
         }
 
         if (password !== confirmPassword) {
-            setError("Las contraseñas no coinciden.");
+            setError(t('register.password_mismatch'));
             return;
         }
 
@@ -52,14 +56,14 @@ export const FormRegister = () => {
             navigate("/home");
 
         } catch (err) {
-            setError("Ocurrió un error inesperado.");
+            setError(t('login.error_unexpected'));
         }
     };
 
     return (
         <div className="form-style">
             <div className='header-form'>
-                <h1>Registro</h1>
+                <h1>{t('register.title')}</h1>
             </div>
 
             <form className="inputs-form" onSubmit={handleSubmit}>
@@ -68,37 +72,37 @@ export const FormRegister = () => {
                 
                 <Input
                     tipo="text"
-                    nombreInput="Usuario"
+                    nombreInput={t('register.username')}
                     texto={usuario}
-                    ph="Introduce tu Usuario"
+                    ph={t('register.username_placeholder')}
                     onChange={(e: any) => setUsuario(e.target.value)}
                 />
 
                 <Input
                     tipo="email"
-                    nombreInput="Correo"
+                    nombreInput={t('login.email')}
                     texto={correo}
-                    ph="Introduce tu correo electrónico"
+                    ph={t('login.email_placeholder')}
                     onChange={(e: any) => setCorreo(e.target.value)}
                 />
 
                 <Input
                     tipo="password"
-                    nombreInput="Contraseña"
+                    nombreInput={t('login.password')}
                     texto={password}
-                    ph="Introduce tu contraseña"
+                    ph={t('login.password_placeholder')}
                     onChange={(e: any) => setPassword(e.target.value)}
                 />
 
                 <Input
                     tipo="password"
-                    nombreInput="Repite la contraseña"
+                    nombreInput={t('register.repeat_password')}
                     texto={confirmPassword}
-                    ph="Introduce tu contraseña"
+                    ph={t('login.password_placeholder')}
                     onChange={(e: any) => setConfirmPassword(e.target.value)}
                 />
 
-                <Button nombre="Registrarse" class="btn" tipo="submit" />
+                <Button nombre={t('register.submit')} class="btn" tipo="submit" />
             </form>
         </div>
     );

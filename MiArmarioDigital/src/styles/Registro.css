@@ -1,52 +1,60 @@
-@import "tailwindcss";
-
 @layer components {
-
-    /* FONDO DE PÁGINA */
-    .register-page {
-        @apply min-h-screen w-full flex items-center justify-center p-4 py-8 overflow-y-auto;
-        @apply bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-fuchsia-400 to-fuchsia-600;
-    }
-
-    /* TARJETA DEL FORMULARIO */
-    .form-style {
-        @apply bg-white rounded-3xl shadow-2xl w-full h-fit flex-shrink-0;
-        @apply flex flex-col p-8 sm:p-12;
-        @apply max-w-[450px] mx-auto transition-all duration-300;
-    }
-
-    /* CABECERA */
-    .header-form {
-        @apply mb-3 text-center;
-    }
-
-    .header-form h1 {
-        @apply text-3xl font-bold text-[#18181B] tracking-tight;
-    }
-
-    /* CONTENEDOR DE INPUTS */
-    .inputs-form {
-        @apply flex flex-col gap-6;
-    }
-
-    /* ESTILO DE INPUT */
-    .input-field-line {
-        @apply w-full py-2 bg-transparent outline-none transition-all duration-300;
-        @apply border-b-2 border-[#D4D4D8] rounded-none px-0;
-        @apply text-[#18181B] font-medium;
-        @apply placeholder:text-[#71717A]/60;
-        @apply focus:border-[#C026D3];
-    }
+  .register-page {
+    @apply h-screen w-full flex items-center justify-center p-4 overflow-hidden transition-colors duration-500;
     
-    /* ETIQUETAS */
-    .input-label {
-        @apply block text-sm font-semibold text-[#18181B] mb-1;
-    }
+    /* Fondo Claro */
+    @apply bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-fuchsia-400 to-fuchsia-600;
+    
+    /* Fondo Oscuro - USAMOS @apply aquí también para que no de error */
+    @apply dark:from-gray-950 dark:to-gray-900;
+  }
 
-    /* BOTÓN */
-    .btn-register {
-        @apply w-full py-3 px-4 rounded-full font-bold transition-all duration-300 shadow-lg mt-4;
-        @apply bg-[#C026D3] text-white; 
-        @apply hover:bg-[#a21caf] hover:shadow-xl hover:-translate-y-0.5;
-    }
+  .form-style {
+    /* Combinamos todo en un solo @apply para que sea limpio */
+    @apply bg-white dark:bg-[#18181B] rounded-3xl shadow-2xl w-full flex flex-col p-8 sm:p-12 flex-shrink-0 transition-colors duration-500;
+    @apply max-w-[450px] mx-auto;
+    @apply max-h-full overflow-y-auto;
+    @apply h-fit min-h-fit;
+  }
+
+  /* Cabecera h1 */
+  .header-form {
+    @apply mb-10 text-center;
+  }
+
+  .header-form h1 {
+    /* De Negro a Blanco/Gris muy claro */
+    @apply text-3xl font-bold text-[#18181B] dark:text-gray-100 tracking-tight transition-colors duration-300;
+  }
+
+  /* Contenedor de inputs */
+  .inputs-form {
+    @apply flex flex-col gap-6;
+  }
+
+  /* Input estilo "línea" */
+  .input-field-line {
+    @apply w-full py-2 bg-transparent outline-none transition-all duration-300;
+    /* Borde: De Gris suave a Gris oscuro */
+    @apply border-b-2 border-[#D4D4D8] dark:border-gray-600 rounded-none px-0;
+    /* Texto que escribes: ¡ESTO ERA INVISIBLE! De Negro a Blanco */
+    @apply text-[#18181B] dark:text-white font-medium;
+    /* Placeholder: Un gris suave */
+    @apply placeholder:text-[#71717A]/60 dark:placeholder:text-gray-500;
+    /* Focus: Mantiene el color Fuchsia siempre */
+    @apply focus:border-[#C026D3];
+  }
+  
+  /* ETIQUETAS (Usuario, Correo, Contraseña...) - ¡ESTO TAMBIÉN ERA INVISIBLE! */
+  .input-label {
+    /* De Negro a Gris Claro */
+    @apply block text-sm font-semibold text-[#18181B] dark:text-gray-200 mb-1 transition-colors duration-300;
+  }
+
+  /* Botón (Mismo estilo morado para ambos) */
+  .btn-register {
+    @apply w-full py-3 px-4 rounded-full font-bold transition-all duration-300 shadow-lg mt-4;
+    @apply bg-[#C026D3] text-white; 
+    @apply hover:bg-[#a21caf] hover:shadow-xl hover:-translate-y-0.5;
+  }
 }

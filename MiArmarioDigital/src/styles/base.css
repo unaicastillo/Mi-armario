@@ -1,0 +1,23 @@
+@layer base {
+
+    /* Estilos base para toda la página (html y body) */
+    html,
+    body {
+        /* Tema Claro por defecto */
+        @apply bg-gray-50 text-gray-900 transition-colors duration-300;
+    }
+
+    /* Estilos globales cuando el modo oscuro está activado */
+    .dark body {
+        /* Tema Oscuro */
+        @apply bg-gray-900 text-gray-100;
+    }
+
+    .dark {
+        filter: invert(1) hue-rotate(180deg);
+    }
+
+    .dark img {
+        filter: invert(1) hue-rotate(180deg);
+    }
+}

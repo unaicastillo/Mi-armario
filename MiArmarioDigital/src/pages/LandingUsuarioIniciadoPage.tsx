@@ -3,8 +3,10 @@ import { TarjetaOutfits } from '../components/TarjetaOutfits';
 import bannerImage from '../assets/MiArmarioLogo.png';
 import Header from '../components/Header';
 import { Footer } from '../components/footer';
+import { useTranslation } from "react-i18next";
 
 const LandingUsuarioIniciado = () => {
+    const { t } = useTranslation();
   return (
     <div>
         {/* --- CABECERA --- */}
@@ -25,13 +27,13 @@ const LandingUsuarioIniciado = () => {
                 
                 {/* Título Principal */}
                 <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-xl text-white">
-                    Organiza tu estilo. <br/>
-                    <span className="text-[#c026d3]">Encuentra tu look perfecto.</span>
+                   {t('landing.title1')} <br/>
+                    <span className="text-[#c026d3]">{t('landing.title2')}</span>
                 </h1>
                 
                 {/* Subtítulo / Párrafo */}
                 <p className="text-lg md:text-xl mb-10 opacity-90 drop-shadow-md text-gray-200 px-2">
-                    Explora y busca nuevas prendas y crea combinaciones únicas.
+                    {t('landing.subtitle')}
                 </p>
 
                 {/* Elemento Decorativo (Simulación de Buscador) */}

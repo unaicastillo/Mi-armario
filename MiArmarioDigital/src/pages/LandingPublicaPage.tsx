@@ -3,8 +3,10 @@ import Header from '../components/Header';
 import { Input } from '../components/form/Input'; 
 import bannerImage from '../assets/MiArmarioLogo.png';
 import { Footer } from '../components/footer';
+import { useTranslation } from "react-i18next";
 
 const LandingPublica = () => {
+  const { t } = useTranslation();
   return (
     <div className="min-h-screen font-sans bg-gray-50 flex flex-col justify-between">
       
@@ -23,11 +25,11 @@ const LandingPublica = () => {
             {/* Contenido sobre el banner */}
             <div className="relative z-10 text-center max-w-3xl w-full mt-8">
                 <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-xl text-white">
-                    Organiza tu estilo. <br/>
-                    <span className="text-[#c026d3]">Encuentra tu look perfecto.</span>
+                    {t('landing.title1')} <br/>
+                    <span className="text-[#c026d3]">{t('landing.title2')}</span>
                 </h1>
                 <p className="text-lg md:text-xl mb-10 opacity-90 drop-shadow-md text-gray-200 px-2">
-                    Explora y busca nuevas prendas y crea combinaciones únicas.
+                    {t('landing.subtitle')}
                 </p>
 
                 {/* Buscador dentro de la barra blanca */}

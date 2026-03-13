@@ -1,0 +1,48 @@
+{
+  "login": {
+    "title": "Sign in",
+    "email": "Email",
+    "email_placeholder": "Enter your email",
+    "password": "Password",
+    "password_placeholder": "Enter your password",
+    "submit": "Sign in",
+    "no_account": "Don't have an account?",
+    "register_here": "Register here",
+    "error_required": "Please fill in all fields.",
+    "error_unexpected": "An unexpected error occurred."
+  },
+  "register": {
+    "title": "Register",
+    "username": "Username",
+    "username_placeholder": "Enter your username",
+    "repeat_password": "Repeat password",
+    "submit": "Sign up",
+    "password_mismatch": "Passwords do not match."
+  },
+  "header": {
+    "contact": "Contact us",
+    "about": "About us",
+    "stats": "Statistics",
+    "login": "Sign in",
+    "register": "Sign up"
+  },
+  "footer": {
+    "help": "Help",
+    "support": "Support center",
+    "terms": "Terms and conditions",
+    "privacy": "Privacy policy",
+    "contact": "Contact",
+    "follow": "Follow us",
+    "brand_description": "Your ultimate companion for personal style management. Digitize your wardrobe, plan your daily outfits and discover new combinations with the clothes you already own. Simplify your mornings and elevate your style.",
+    "rights": "All rights reserved."
+  },
+  "outfits": {
+    "recent": "What you wore recently",
+    "outfit": "Outfit"
+  },
+  "landing": {
+    "title1": "Organize your style.",
+    "title2": "Find your perfect look.",
+    "subtitle": "Explore new clothes and create unique combinations."
+  }
+}

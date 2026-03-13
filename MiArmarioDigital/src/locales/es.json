@@ -1,0 +1,48 @@
+{
+  "login": {
+    "title": "Inicia sesión",
+    "email": "Correo",
+    "email_placeholder": "Introduce tu correo electrónico",
+    "password": "Contraseña",
+    "password_placeholder": "Introduce tu contraseña",
+    "submit": "Iniciar sesión",
+    "no_account": "¿No tienes cuenta?",
+    "register_here": "Regístrate aquí",
+    "error_required": "Por favor, rellena todos los campos.",
+    "error_unexpected": "Ocurrió un error inesperado."
+  },
+  "register": {
+    "title": "Registro",
+    "username": "Usuario",
+    "username_placeholder": "Introduce tu usuario",
+    "repeat_password": "Repite la contraseña",
+    "submit": "Registrarse",
+    "password_mismatch": "Las contraseñas no coinciden."
+  },
+  "header": {
+    "contact": "Contáctanos",
+    "about": "Conócenos",
+    "stats": "Estadísticas",
+    "login": "Iniciar sesión",
+    "register": "Registrarse"
+  },
+  "footer": {
+    "help": "Ayuda",
+    "support": "Centro de soporte",
+    "terms": "Términos y condiciones",
+    "privacy": "Política de privacidad",
+    "contact": "Contacto",
+    "follow": "Síguenos",
+    "brand_description": "Tu compañero definitivo para la gestión de estilo personal. Digitaliza tu guardarropa, planifica tus outfits diarios y descubre nuevas combinaciones con la ropa que ya tienes. Simplifica tus mañanas y eleva tu estilo.",
+    "rights": "Todos los derechos reservados."
+  },
+  "outfits": {
+    "recent": "Lo que has usado hace poco",
+    "outfit": "Outfit"
+  },
+  "landing": {
+    "title1": "Organiza tu estilo.",
+    "title2": "Encuentra tu look perfecto.",
+    "subtitle": "Explora y busca nuevas prendas y crea combinaciones únicas."
+  }
+}

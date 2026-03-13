@@ -29,7 +29,10 @@
     a{
         @apply p-2.5 text-center
     }
-    
+
+    #root{
+        @apply relative z-0
+    }
     /* Luz morada en las páginas de Login, Register y Edicion de perfil */
     #shadow_box {
         @apply absolute
@@ -41,7 +44,7 @@
             top-[80vh]
             translate-y-[-83%]
             rotate-z-66
-            -z-10
+            z-[-1]
     }
 
     #btn_favorito{

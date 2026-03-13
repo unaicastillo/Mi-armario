@@ -3,6 +3,7 @@ import { Button } from '../components/Button';
 import Header from '../components/Header';
 import { Footer } from '../components/footer';
 import { Button_favorito } from '../components/Button_favorito';
+import HeaderSesion from '../components/HeaderSesion';
 
   /* Conjuntos tiene un uso meramente visual, para mostrar un gran número de conjuntos */
 const conjuntos = [
@@ -88,7 +89,7 @@ export const Favoritos = () => {
   // }
   return (
     <div >
-      <Header></Header>
+      <HeaderSesion></HeaderSesion>
       <div className="favoritos">
         <div className="contenedor_favoritos">
           {conjuntos.map((el, index) => (

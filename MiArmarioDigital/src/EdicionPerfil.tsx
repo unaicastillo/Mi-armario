@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Button } from "./components/Button";
 import { Input } from "./components/form/Input";
+import HeaderSesion from "./components/HeaderSesion";
+import { Footer } from "./components/footer";
 
 
 export const EdicionPerfil = () => {
@@ -22,7 +24,12 @@ export const EdicionPerfil = () => {
   const handleMouseEnter = () => setImgSrc(icono_edicion);
   const handleMouseLeave = () => setImgSrc(img_perfil);
 
+  function asdf(){
+    console.log(".")
+  }
   return (
+    <>
+    <HeaderSesion></HeaderSesion>
     <div className="profile_box">
       <div id="shadow_box"></div>
 
@@ -34,15 +41,17 @@ export const EdicionPerfil = () => {
           <img className="img_perfil" src={img}     />
         </button>
   
-        <Input nombreInput="nombre" texto="" ph="Escribe tu nombre..." tipo="text" key={nombre} ></Input>
-        <Input nombreInput="correo" texto="" ph="Escribe tu correo..." tipo="text" key={correo} ></Input>
-        <Button nombre="Confirmar cambios" onClick={editarPerfil} class="btn_editar"></Button>
+        <Input nombreInput="nombre" texto="" ph="Escribe tu nombre..." tipo="text" key={nombre} onChange={asdf}></Input>
+        <Input nombreInput="correo" texto="" ph="Escribe tu correo..." tipo="text" key={correo} onChange={asdf}></Input>
+        <Button nombre="Confirmar cambios" /*onClick={editarPerfil}*/ class="btn"></Button>
 
       </div>
 
 
 
 
-    </div>
+    </div>    
+    <Footer></Footer>
+    </>
   )
 }

@@ -4,7 +4,12 @@ import { Button } from './Button';
 import '../styles/Header.css';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const HeaderSesion = () => {
+
+    const img_perfil = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png";
+    const nombre = "fsdjhgkasjhdgfakshgdfkasjhdgfadf";
+
+
 
   const [showRopa, setShowRopa] = useState(false);
   const [showOtros, setShowOtros] = useState(false);
@@ -25,7 +30,6 @@ const Header = () => {
       <nav className="header-nav">
 
 
-        {/* Dropdown Ropa */}
         <div
           className="dropdown"
           onMouseEnter={() => setShowRopa(true)}
@@ -42,7 +46,6 @@ const Header = () => {
           )}
         </div>
 
-        {/* Dropdown Otros */}
         <div
           className="dropdown"
           onMouseEnter={() => setShowOtros(true)}
@@ -58,25 +61,17 @@ const Header = () => {
         </div>
       </nav>
 
+      <div className="header-login-buttons-section">
 
-      <div className="header-buttons-section">
-
-          <Link to="/login">
-            <Button 
-                nombre="Iniciar Sesion" 
-                class="header-btn-login"
-            />
-          </Link>
-
-        <Link to="/register">
-          <Button 
-              nombre="Registrarse" 
-              class="header-btn-register" 
-          />
+        <Link to="/perfil" className='header_user_box'>
+            <button className='perfil_box'>
+                <img className='img_perfil_header' src={img_perfil} />
+                <h2>{nombre}</h2>
+            </button>
         </Link>
       </div>
     </header>
   );
 };
 
-export default Header;
+export default HeaderSesion;

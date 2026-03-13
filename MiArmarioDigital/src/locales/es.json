@@ -44,5 +44,59 @@
     "title1": "Organiza tu estilo.",
     "title2": "Encuentra tu look perfecto.",
     "subtitle": "Explora y busca nuevas prendas y crea combinaciones únicas."
+  },
+  "wardrobe": {
+    "title": "Ropa guardada",
+    "subtitle": "Explora tus prendas almacenadas en el armario digital.",
+    "upload": "Subir prenda",
+    "garment": "Prenda",
+    "description": "Descripción breve de la prenda."
+  },
+  "upload": {
+    "title": "Sube tu prenda",
+    "subtitle": "Añade una nueva pieza a tu armario digital.",
+    "photo": "Foto de la prenda",
+    "name": "Nombre de la prenda",
+    "name_placeholder": "Ej. Camiseta blanca básica",
+    "category": "Categoría",
+    "select": "Selecciona...",
+    "color": "Color",
+    "select_color": "Elige color...",
+    "notes": "Notas (Opcional)",
+    "notes_placeholder": "¿Para qué ocasión es? ¿Marca?",
+    "cancel": "Cancelar",
+    "save": "Guardar prenda",
+    "categories": {
+      "tops": "Camisetas / Tops",
+      "bottoms": "Pantalones / Faldas",
+      "dresses": "Vestidos / Monos",
+      "shoes": "Zapatos",
+      "accessories": "Accesorios"
+    },
+    "colors": {
+      "black": "Negro",
+      "white": "Blanco",
+      "grey": "Gris",
+      "blue": "Azul",
+      "red": "Rojo",
+      "green": "Verde",
+      "multi": "Varios / Multicolor"
+    }
+  },
+  "outfit_creator": {
+    "title": "Creador de conjuntos",
+    "subtitle": "Vista visual de tus combinaciones guardadas.",
+    "new": "Nuevo conjunto",
+    "outfit": "Conjunto",
+    "description": "Descripción breve del look."
+  },
+  "stats": {
+    "users_registered": "Usuarios registrados en la app",
+    "outfits_created": "Conjuntos creados por los usuarios",
+    "months": {
+      "jan": "Ene",
+      "feb": "Feb",
+      "mar": "Mar"
+    }
   }
 }

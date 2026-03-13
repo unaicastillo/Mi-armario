@@ -3,27 +3,30 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 import Header from '../components/Header';
 import { Footer } from '../components/footer';
 import { LineChartElement } from '../components/LineChartElement';
+import { useTranslation } from "react-i18next";
+import { t } from 'i18next';
 
 const usuariosRegistrados = [
-  { name: 'Ene', value: 10 },
-  { name: 'Feb', value: 20 },
-  { name: 'Mar', value: 125 },
+  { name: t('stats.months.jan'), value: 10 },
+  { name: t('stats.months.feb'), value: 20 },
+  { name: t('stats.months.mar'), value: 125 },
 
 ];
 
 const ConjuntosCreados = [
-    {name: 'Ene', value: 55},
-    {name: 'Feb', value: 220},
-    {name: 'Mar', value: 450}
+    {name: t('stats.months.jan'), value: 55},
+    {name: t('stats.months.feb'), value: 220},
+    {name: t('stats.months.mar'), value: 450}
 ];
 
 export const Graficos = () => {
+    const { t } = useTranslation();
     return (
         <>
             <Header/>
             <div className="grid grid-cols-2 gap-6 m-1.5">
-                <LineChartElement items={usuariosRegistrados} title={'Usuarios registrados en la App'}/>
-                <LineChartElement items={ConjuntosCreados} title={'Conjuntos creados por los usuarios'}/>
+                <LineChartElement items={usuariosRegistrados} title={t('stats.users_registered')}/>
+                <LineChartElement items={ConjuntosCreados} title={t('stats.outfits_created')}/>
             </div>
             <Footer/>
         </>

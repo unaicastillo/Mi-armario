@@ -44,5 +44,59 @@
     "title1": "Organize your style.",
     "title2": "Find your perfect look.",
     "subtitle": "Explore new clothes and create unique combinations."
+  },
+  "wardrobe": {
+    "title": "Saved clothes",
+    "subtitle": "Explore your garments stored in the digital wardrobe.",
+    "upload": "Upload garment",
+    "garment": "Garment",
+    "description": "Short garment description."
+  },
+  "upload": {
+    "title": "Upload your garment",
+    "subtitle": "Add a new piece to your digital wardrobe.",
+    "photo": "Garment photo",
+    "name": "Garment name",
+    "name_placeholder": "e.g. Basic white t-shirt",
+    "category": "Category",
+    "select": "Select...",
+    "color": "Color",
+    "select_color": "Choose color...",
+    "notes": "Notes (Optional)",
+    "notes_placeholder": "What occasion? Brand?",
+    "cancel": "Cancel",
+    "save": "Save garment",
+    "categories": {
+      "tops": "Tops / T-shirts",
+      "bottoms": "Pants / Skirts",
+      "dresses": "Dresses / Jumpsuits",
+      "shoes": "Shoes",
+      "accessories": "Accessories"
+    },
+    "colors": {
+      "black": "Black",
+      "white": "White",
+      "grey": "Grey",
+      "blue": "Blue",
+      "red": "Red",
+      "green": "Green",
+      "multi": "Multi / Mixed"
+    }
+  },
+  "outfit_creator": {
+    "title": "Outfit creator",
+    "subtitle": "Visual view of your saved combinations.",
+    "new": "New outfit",
+    "outfit": "Outfit",
+    "description": "Short look description."
+  },
+  "stats": {
+    "users_registered": "Users registered in the app",
+    "outfits_created": "Outfits created by users",
+    "months": {
+      "jan": "Jan",
+      "feb": "Feb",
+      "mar": "Mar"
+    }
   }
 }

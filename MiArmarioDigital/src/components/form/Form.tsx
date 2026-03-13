@@ -11,6 +11,10 @@ export const Form = () => {
     
     // Estadoslistos para Supabase
 
+import { supabase } from "../../supabase/client"; 
+
+export const Form = () => {
+    // Estados para Supabase
     const [correo, setCorreo] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState<string | null>(null);
@@ -28,14 +32,27 @@ export const Form = () => {
         }
 
         try {
-            // TODO: Aquí irá código de Supabase
-            console.log("Todo validado. Listo para iniciar sesión en Supabase:", { correo, password });
+            // 2. Llamada real a Supabase para iniciar sesión
+            const { data, error: supabaseError } = await supabase.auth.signInWithPassword({
+                email: correo,
+                password: password,
+            });
 
-            // Redirección a la página de usuario iniciado
+            // Si falla (ej. contraseña incorrecta o el correo no existe)
+            if (supabaseError) {
+                // Ponemos un mensaje genérico por seguridad
+                setError("Correo o contraseña incorrectos."); 
+                return;
+            }
+
+            console.log("¡Sesión iniciada con éxito en Supabase!", data.user);
+
+            // 3. Redirección a la página principal del usuario
             navigate("/home");
 
         } catch (err) {
             setError(t('login.error_unexpected'));
+            console.error(err);
         }
     };
 

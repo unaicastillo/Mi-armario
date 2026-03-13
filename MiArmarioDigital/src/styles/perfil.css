@@ -1,13 +1,14 @@
 
 @layer perfi{
+
     .profile_box{
         @apply
-            w-[100vw]
             h-[100vh]
             grid
             justify-center
             items-center
-
+            relative
+            overflow-hidden
 
     }
     .user_box{
@@ -17,30 +18,18 @@
             grid
             items-center
             justify-items-center
-    }
-    #shadow_box {
-        @apply absolute
-            justify-self-center
-            bg-[#B200B8]
-            blur-[123px]
-            w-[60vh]
-            h-[91vh]
-            top-[83vh]
-            translate-y-[-90%]
-            rotate-z-[66deg]
-            -z-10
-    }
-
-    .user_box{
-        @apply  bg-[#EEEEEE] 
+          bg-[#EEEEEE] 
             border-[5px] 
             border-solid 
-            rounded-[21px] 
-            
-            grid 
-            justify-items-center 
-            items-center;
+            rounded-[21px]
+
+            max-[450px]:h-[370px]
+            max-[450px]:w-[265px]
+
+
     }
+
+
 
     .btn_editar{
         @apply bg-[#C026D3] w-[140px] h-[40px] rounded-[4px] text-white;
